@@ -1,5 +1,5 @@
 <template>
-  <div>
-    <h1>Hello</h1>
-  </div>
+  <Nav />
+  <HomeSection1 />
+  <HomeSection2 />
 </template>

@@ -1,0 +1,130 @@
+<template>
+    <section class="text-white px-6 pb-5 pt-20 h-full">
+        <section class="border-dashed border-zinc-700 border-[5px] rounded-3xl">
+            <h1 class="text-3xl lg:text-5xl m-10 uppercase">Markly Testimonial Collection.</h1>
+            <p class="mt-5 text-[#676665] ml-10">At Markly, our customers are the heartbeat of our brand.</p>
+            <section class="grid lg:grid-cols-3 md:grid-cols-2">
+                <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 mt-20">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer1.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Sarah Thompson</p>
+                                <p class="text-[#676665] text-lg">New York, USA</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Markly exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!</p>
+                </section>
+                <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700 md:mt-20">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer2.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Rajesh Patel</p>
+                                <p class="text-[#676665] text-lg">Mumbai, India</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!</p>
+                </section>
+                <section class="p-10 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-zinc-700 lg:mt-20">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer3.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Emily Walker</p>
+                                <p class="text-[#676665] text-lg">London, UK</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Adorable and comfortable! My daughter loves her new outfit. Thank you, StyleLoom, for dressing our little fashionista.</p>
+                </section>
+                <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer4.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Alejandro Martinez</p>
+                                <p class="text-[#676665] text-lg">Barcelona, Spain</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Impressed by the quality and style. These shoes turned heads at every event. StyleLoom, you've gained a loyal customer!</p>
+                </section>
+                <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer5.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Priya Sharma</p>
+                                <p class="text-[#676665] text-lg">Delhi, India</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Perfect fit and exceptional quality. These jeans have become my go-to for casual and chic outings.</p>
+                </section>
+                <section class="p-10 border-t-[5px] border-dashed border-zinc-700">
+                    <section class="flex justify-between items-center">
+                        <section class="flex">
+                            <nuxt-img src="/images/Comments/Customer6.png" class="w-16 h-16"/>
+                            <section class="mt-1 ml-3">
+                                <p class="text-lg">Maria Rodriguez</p>
+                                <p class="text-[#676665] text-lg">Mexico City, Mexico</p>
+                            </section>
+                        </section>
+                        <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
+                    </section>
+                    <section class="flex my-10">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    </section>
+                    <p class="text-[#676665] text-lg">Stylish sneakers that don't compromise on comfort. StyleLoom knows how to balance fashion and functionality.</p>
+                </section>
+            </section>
+        </section>
+    </section>
+</template>

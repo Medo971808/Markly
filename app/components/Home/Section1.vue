@@ -3,7 +3,7 @@
         <section class="relative">
             <NuxtImg src="/images/Image.png" alt="" class="h-auto w-full rounded-t-lg" />
             <NuxtLink to="/shop"
-                class="cursor-pointer absolute top-[130px] left-[36%] lg:top-[485px] lg:left-[46%] w-[128px] h-[49px] rounded-xl text-14 bg-[#1F1F1F] border-[5px] border-dashed border-zinc-700 flex items-center justify-center">
+                class="cursor-pointer absolute left-1/2 lg:top-[485px] lg:left-[46%] lg:w-[128px] w-[110px] lg:h-[49px] h-[40px] rounded-xl text-10 lg:text-14 bg-[#1F1F1F] border-[5px] border-dashed border-zinc-700 flex items-center justify-center">
                 Shop Now</NuxtLink>
             <section class="lg:flex justify-between text-[#B3B3B2]">
                 <section class="py-10 px-5 border-x-[5px] lg:border-x-0 lg:border-l-[5px] border-b-[5px] lg:rounded-bl-3xl border-zinc-700 border-dashed lg:w-[50%]">

@@ -43,7 +43,7 @@
                 <div class="p-10 relative border-t  border-r border-dashed border-zinc-700">
                     <div class="rounded-full w-20 h-20 border border-dashed border-zinc-700 flex justify-center items-center">
                         <div class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['far', 'gem']" class="text-[#C2B4A3] text-2xl" />
+                            <FontAwesomeIcon :icon="['fas', 'magic']" class="text-[#C2B4A3] text-2xl" />
                         </div>
                     </div>
                     <h3 class="text-2xl mt-10 mb-2">Empowering Your Style</h3>

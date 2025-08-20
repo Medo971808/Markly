@@ -22,7 +22,7 @@
                         <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
                         <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Markly exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Markly exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!</p>
                 </section>
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700 md:mt-20">
                     <section class="flex justify-between items-center">

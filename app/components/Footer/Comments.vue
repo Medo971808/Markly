@@ -15,12 +15,12 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
                     <p class="text-[#676665] text-sm md:text-lg">Markly exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!</p>
                 </section>
@@ -35,14 +35,14 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!</p>
                 </section>
                 <section class="p-10 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-zinc-700 lg:mt-20">
                     <section class="flex justify-between items-center">
@@ -55,14 +55,14 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Adorable and comfortable! My daughter loves her new outfit. Thank you, StyleLoom, for dressing our little fashionista.</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Adorable and comfortable! My daughter loves her new outfit. Thank you, StyleLoom, for dressing our little fashionista.</p>
                 </section>
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
@@ -75,14 +75,14 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Impressed by the quality and style. These shoes turned heads at every event. StyleLoom, you've gained a loyal customer!</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Impressed by the quality and style. These shoes turned heads at every event. StyleLoom, you've gained a loyal customer!</p>
                 </section>
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
@@ -95,14 +95,14 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Perfect fit and exceptional quality. These jeans have become my go-to for casual and chic outings.</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Perfect fit and exceptional quality. These jeans have become my go-to for casual and chic outings.</p>
                 </section>
                 <section class="p-10 border-t-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
@@ -115,14 +115,14 @@
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
                     </section>
-                    <section class="flex my-10">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-lg" />
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-lg" />
+                    <section class="flex md:my-10 my-5">
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] text-sm md:text-lg" />
                     </section>
-                    <p class="text-[#676665] text-lg">Stylish sneakers that don't compromise on comfort. StyleLoom knows how to balance fashion and functionality.</p>
+                    <p class="text-[#676665] text-sm md:text-lg">Stylish sneakers that don't compromise on comfort. StyleLoom knows how to balance fashion and functionality.</p>
                 </section>
             </section>
         </section>

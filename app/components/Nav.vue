@@ -5,7 +5,7 @@
             <NuxtLink class="cursor-pointer border border-dashed border-zinc-700 text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>
         </section>
         <section class="text-white font-semibold text-3xl">
-            <span class="font-normal">Markly</span>
+            <span style="font-family: 'Pacifico', cursive;">Markly</span>
         </section>
         <section class="flex items-center space-x-3">
             <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded" to="/shop">

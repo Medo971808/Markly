@@ -1,7 +1,7 @@
 <template>
     <section class="text-white px-6 pb-5 pt-20 h-full">
         <section class="border-dashed border-zinc-700 border-[5px] rounded-3xl">
-            <h1 class="text-5xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
+            <h1 class="text-3xl lg:text-5xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
             <p class="mt-5 text-[#676665] ml-10">Each piece is crafted to enhance your fashion statement.</p>
             <section class="ml-10 mt-10">
                 <button class="w-16 h-10 border-dashed border-zinc-700 border-[3px] rounded-lg">All</button>

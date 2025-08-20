@@ -9,7 +9,7 @@
                     <button class="w-12 h-10 border border-dashed border-zinc-700 ml-2 rounded-lg">Men</button>
                     <button class=" w-20 h-10 border border-dashed border-zinc-700 mx-2 rounded-lg">Women</button>
                     <button class="w-12 h-10 border border-dashed border-zinc-700 rounded-lg">Kids</button>
-                    <h1 class="text-6xl my-5 text-white">ElEVATE YOUR STYLE WITH MARKLY</h1>
+                    <h1 class="text-3xl lg:text-6xl my-5 text-white">ElEVATE YOUR STYLE WITH MARKLY</h1>
                     <p class="text-[#676665]">Explore a world of fashion at StyleLoom, where trends meet affordability. 
                         Immerse yourself in the latest styles and seize exclusive promotions.</p>
                 </section>

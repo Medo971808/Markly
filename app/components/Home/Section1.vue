@@ -16,7 +16,7 @@
                     <p class="text-[#676665]">Explore a world of fashion at StyleLoom, where trends meet affordability.
                         Immerse yourself in the latest styles and seize exclusive promotions.</p>
                 </section>
-                <section class="border-x-[5px] border-b-[5px] rounded-br-3xl rounded-bl-3xl lg:rounded-bl-none border-zinc-700 border-dashed lg:w-[50%] grid grid-cols-2">
+                <section class="text-center border-x-[5px] border-b-[5px] rounded-br-3xl rounded-bl-3xl lg:rounded-bl-none border-zinc-700 border-dashed lg:w-[50%] grid grid-cols-2">
                     <section
                         class="flex flex-col justify-center items-center gap-2 border-b-[5px] border-r-[5px] border-zinc-700 border-dashed">
                         <h2 class="text-5xl text-white">1,500 +</h2>

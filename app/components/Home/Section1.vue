@@ -1,7 +1,7 @@
 <template>
     <section class="text-white px-6 py-5 h-full mt-16">
         <section class="relative">
-            <NuxtImg src="/images/Image.png" alt="" class="h-auto w-full rounded-t-lg" />
+            <NuxtImg src="/images/Image.png" alt="" class="h-auto w-full rounded-t-3xl" />
             <section class="lg:flex justify-between text-[#B3B3B2]">
                 <section class="py-10 px-5 border-x-[5px] lg:border-x-0 lg:border-l-[5px] border-b-[5px] lg:rounded-bl-3xl border-zinc-700 border-dashed lg:w-[50%]">
                     <button class="w-16 h-10 border-dashed border-zinc-700 border-[3px] rounded-lg">All</button>

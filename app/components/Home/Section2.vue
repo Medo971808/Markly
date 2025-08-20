@@ -2,7 +2,7 @@
     <section class="text-white px-6 pb-5 pt-20 h-full">
         <section class="border-[5px] border-dashed border-zinc-700 rounded-3xl">
             <h1 class="lg:text-5xl text-3xl m-10">CRAFTING TRENDS, INSPIRING CONFIDENCE</h1>
-            <p class="mt-5 text-[#676665] ml-10">Explore a world of fashion at StyleLoom, where trends meet affordability.</p>
+            <p class="mt-5 text-[#676665] ml-5 text-md">Explore a world of fashion at StyleLoom, where trends meet affordability.</p>
             <section class="grid lg:grid-cols-3 md:grid-cols-2">
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 mt-20 flex flex-col justify-center">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-zinc-700 flex justify-center items-center">

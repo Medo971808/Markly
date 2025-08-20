@@ -7,7 +7,7 @@
                 <button class="w-16 h-10 border-dashed border-zinc-700 border-[3px] rounded-lg">All</button>
                 <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 ml-2 rounded-lg">Men</button>
                 <button class="w-24 h-10 bg-[#C2B4A3] text-[#0F0F0F] mx-2 rounded-lg">Women</button>
-                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 rounded-lg">Kids</button>
+                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 rounded-lg mt-3 md:mt-0">Kids</button>
             </section>
             <section class="grid md:grid-cols-2 lg:grid-cols-3">
                 <section class="p-4 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 mt-10 flex items-center flex-col">

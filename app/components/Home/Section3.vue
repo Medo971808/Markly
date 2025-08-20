@@ -9,7 +9,7 @@
                     <h2 class="mt-5 mb-3 text-xl">Discover Trends</h2>
                     <p class="text-[#81807E]">Explore our curated collection of over 1000 styles, spanning global fashion trends.</p>
                 </section>
-                <section class="p-10 border-t border-r border-dashed border-zinc-700 mt-20">
+                <section class="p-10 border-t border-r border-dashed border-zinc-700 lg:mt-20">
                     <h3 class="text-[#676665] text-lg">Step 02</h3>
                     <h2 class="mt-5 mb-3 text-xl">Effortless Navigation</h2>
                     <p class="text-[#81807E]">Intuitive filters and categories help you find the perfect pieces tailored to your style.</p>

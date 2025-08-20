@@ -17,7 +17,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Timeless A-line Evening Dress</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Timeless A-line Evening Dress</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> Ankle-length</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$109.99</span></p>
@@ -31,7 +31,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Floral Bloom Maxi Dress</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Floral Bloom Maxi Dress</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> Slim Fit</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$54.99</span></p>
@@ -45,7 +45,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Elegant Evening Gown</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Elegant Evening Gown</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> Flowing skirt</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$89.99</span></p>
@@ -59,7 +59,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Urban Chic Handbag</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Urban Chic Handbag</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> Spacious</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$49.99</span></p>
@@ -73,7 +73,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Sophisticate Sun Hat</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Sophisticate Sun Hat</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> One size fits all</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$24.99</span></p>
@@ -87,7 +87,7 @@
                         <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84]">Shop Now</NuxtLink>
                     </section>
                     <section class="w-full">
-                        <p class="text-2xl font-bold text-left xl:my-3">Boho Chic Printed Scarf</p>
+                        <p class="text-2xl font-bold mt-5 text-left xl:my-3">Boho Chic Printed Scarf</p>
                         <section class="flex items-center justify-between mt-2">
                             <p class="text-[#81807E] text-xl">Fit:<span class="text-white text-xl"> Lightweight</span></p> 
                             <p class="text-[#81807E] text-xl">Price: <span class="text-white text-xl">$19.99</span></p>

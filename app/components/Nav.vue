@@ -13,7 +13,7 @@ const menuOpen = ref(false)
 </style>
 
 <template>
-  <nav class="bg-[#2A2F38] fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-zinc-700 px-6 py-3">
+  <nav class="bg-[#2A2F38] md:bg-black fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-zinc-700 px-6 py-3">
     <section class="flex justify-between items-center">
       <section class="text-white font-semibold text-2xl md:text-3xl">
         <span style="font-family: 'Pacifico', cursive;">Markly</span>

@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-black text-white px-6 pb-5 pt-20">
+    <section class="bg-black text-white px-6 pb-5 pt-20 h-full">
         <section class="border border-dashed border-zinc-700 rounded-3xl">
             <h1 class="text-5xl m-10 uppercase">Navigating the StyleLoom Fashion Journey.</h1>
             <p class="mt-5 text-[#676665] ml-10">At StyleLoom, we've designed a straightforward shopping experience to make fashion accessible.</p>
@@ -19,7 +19,7 @@
                     <h2 class="mt-5 mb-3 text-xl">Secure Checkout</h2>
                     <p class="text-[#81807E]">Multiple payment options and encrypted transactions ensure a safe and hassle-free purchase.</p>
                 </section>
-                <section class="p-10 border-t border-r border-dashed border-zinc-700 mt-20">
+                <section class="p-10 border-t border-dashed border-zinc-700 mt-20">
                     <h3 class="text-[#676665] text-lg">Step 04</h3>
                     <h2 class="mt-5 mb-3 text-xl">Unbox Happiness</h2>
                     <p class="text-[#81807E]">Unbox a fashion-forward experience delivered right to your door, ready to elevate your style.</p>

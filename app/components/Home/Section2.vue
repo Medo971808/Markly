@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-black text-white px-6 pb-5 pt-20">
+    <section class="bg-black text-white px-6 pb-5 pt-20 h-full">
         <section class="border border-dashed border-zinc-700 rounded-3xl">
             <h1 class="text-5xl m-10">CRAFTING TRENDS, INSPIRING CONFIDENCE</h1>
             <p class="mt-5 text-[#676665] ml-10">Explore a world of fashion at StyleLoom, where trends meet affordability.</p>

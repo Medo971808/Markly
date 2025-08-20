@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-black text-white px-6 py-5">
+    <section class="bg-black text-white px-6 py-5 h-full">
         <section class="rounded-3xl relative border border-zinc-700 border-dashed">
             <NuxtImg src="/images/Image.png"alt=""class="h-auto w-full rounded-t-lg" />
             <NuxtLink to="/shop" class="cursor-pointer absolute top-auto left-1/2 lg:top-[485px] lg:left-[46%] w-[128px] h-[49px] rounded-xl text-14 bg-[#1F1F1F] border border-dashed border-zinc-700 flex items-center justify-center">Shop Now</NuxtLink>

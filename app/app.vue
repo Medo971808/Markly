@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useSeoMeta } from 'nuxt/app';
-
 useSeoMeta({
   title: 'Markly'
 })
@@ -12,6 +10,7 @@ useSeoMeta({
   <HomeSection2 />
   <HomeSection3 />
   <HomeSection4 />
+  <Footer />
 </template>
 
 <style>

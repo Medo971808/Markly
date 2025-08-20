@@ -3,7 +3,7 @@
         <section class="border border-dashed border-zinc-700 rounded-3xl">
             <h1 class="text-5xl m-10">CRAFTING TRENDS, INSPIRING CONFIDENCE</h1>
             <p class="mt-5 text-[#676665] ml-10">Explore a world of fashion at StyleLoom, where trends meet affordability.</p>
-            <section class="grid grid-cols-3">
+            <section class="grid lg:grid-cols-3 md:grid-cols-2">
                 <section class="p-10 border-t border-r border-dashed border-zinc-700 mt-20">
                     <section class="rounded-full w-20 h-20 border border-dashed border-zinc-700 flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
@@ -13,7 +13,7 @@
                     <h3 class="text-2xl mt-10 mb-2">Passionate Craftsmanship</h3>
                     <p class="text-[#81807E] text-md">Every garment at StyleLoom is crafted with passion, reflecting our commitment to quality and innovation.</p>
                 </section>
-                <section class="p-10 border-t  border-r border-dashed border-zinc-700 mt-20">
+                <section class="p-10 border-t  lg:border-r border-dashed border-zinc-700 mt-20">
                     <section class="rounded-full w-20 h-20 border border-dashed border-zinc-700 flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
                             <FontAwesomeIcon :icon="['fas', 'tshirt']" class="text-[#C2B4A3] text-2xl" />
@@ -22,7 +22,7 @@
                     <h3 class="text-2xl mt-10 mb-2">Fashion Forward</h3>
                     <p class="text-[#81807E] text-md">We're more than a brand; we're trendsetters, curating styles that empower and inspire confidence.</p>
                 </section>
-                <section class="p-10 border-t border-dashed border-zinc-700 mt-20">
+                <section class="p-10 border-t md:border-r border-dashed border-zinc-700 lg:mt-20">
                     <section class="rounded-full w-20 h-20 border border-dashed border-zinc-700 flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
                             <FontAwesomeIcon :icon="['far', 'face-smile-beam']" class="text-[#C2B4A3] text-2xl" />
@@ -31,7 +31,7 @@
                     <h3 class="text-2xl mt-10 mb-2">Customer-Centric Approach</h3>
                     <p class="text-[#81807E] text-md">At StyleLoom, our customers are at the heart of everything we do. Your satisfaction is our measure of success.</p>
                 </section>
-                <section class="p-10 border-t border-r border-dashed border-zinc-700">
+                <section class="p-10 border-t lg:border-r border-dashed border-zinc-700">
                     <section class="rounded-full w-20 h-20 border border-dashed border-zinc-700 flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
                             <FontAwesomeIcon :icon="['fas', 'trophy']" class="text-[#C2B4A3] text-2xl" />

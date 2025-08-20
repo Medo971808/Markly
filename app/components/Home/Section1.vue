@@ -18,22 +18,22 @@
                 </section>
                 <section class="text-center border-x-[5px] border-b-[5px] rounded-br-3xl rounded-bl-3xl lg:rounded-bl-none border-zinc-700 border-dashed lg:w-[50%] grid grid-cols-2">
                     <section
-                        class="flex flex-col justify-center items-center gap-2 border-b-[5px] border-r-[5px] border-zinc-700 border-dashed">
-                        <h2 class="text-5xl text-white">1,500 +</h2>
+                        class="flex flex-col justify-center items-center gap-2 border-b-[5px] border-r-[5px] border-zinc-700 border-dashed px-2 py-5 md:p-0">
+                        <h2 class="text-3xl md:text-5xl text-white">1,500 +</h2>
                         <p>Fashion Products</p>
                     </section>
                     <section
-                        class="flex flex-col justify-center items-center gap-2 border-b-[5px] border-zinc-700 border-dashed">
-                        <h2 class="text-5xl text-white">50 +</h2>
+                        class="flex flex-col justify-center items-center gap-2 border-b-[5px] border-zinc-700 border-dashed px-2 py-5 md:p-0">
+                        <h2 class="text-3xl md:text-5xl text-white">50 +</h2>
                         <p>New arrivals every month.</p>
                     </section>
                     <section
-                        class="flex flex-col justify-center items-center gap-2 border-r-[5px] border-zinc-700 border-dashed">
-                        <h2 class="text-5xl text-white">30%</h2>
+                        class="flex flex-col justify-center items-center gap-2 border-r-[5px] border-zinc-700 border-dashed px-2 py-5 md:p-0">
+                        <h2 class="text-3xl md:text-5xl text-white">30%</h2>
                         <p>OFF on select items.</p>
                     </section>
-                    <section class="flex flex-col justify-center items-center gap-2">
-                        <h2 class="text-5xl text-white">95%</h2>
+                    <section class="flex flex-col justify-center items-center gap-2 px-2 py-5 md:p-0">
+                        <h2 class="text-3xl md:text-5xl text-white">95%</h2>
                         <p>Customer Satisfaction Rate</p>
                     </section>
                 </section>

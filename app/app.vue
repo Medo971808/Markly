@@ -17,4 +17,7 @@ useSeoMeta({
 <style>
 @import "@fortawesome/fontawesome-svg-core/styles.css";
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  background-color: black;
+}
 </style>

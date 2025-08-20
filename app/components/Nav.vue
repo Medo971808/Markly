@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex justify-between items-center bg-black px-6 py-3 border-b border-dashed border-zinc-700">
+    <nav class="flex justify-between items-center px-6 py-3 border-b border-dashed border-zinc-700">
         <section class="flex items-center space-x-3">
             <NuxtLink class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded" to="/">Home</NuxtLink>
             <NuxtLink class="cursor-pointer border border-dashed border-zinc-700 text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>

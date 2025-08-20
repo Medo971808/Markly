@@ -8,9 +8,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer1.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Sarah Thompson</p>
-                                <p class="text-[#676665] text-lg">New York, USA</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Sarah Thompson</p>
+                                <p class="text-[#676665] md:text-lg text-sm">New York, USA</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
@@ -28,9 +28,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer2.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Rajesh Patel</p>
-                                <p class="text-[#676665] text-lg">Mumbai, India</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Rajesh Patel</p>
+                                <p class="text-[#676665] md:text-lg text-sm">Mumbai, India</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
@@ -48,9 +48,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer3.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Emily Walker</p>
-                                <p class="text-[#676665] text-lg">London, UK</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Emily Walker</p>
+                                <p class="text-[#676665] md:text-lg text-sm">London, UK</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
@@ -68,9 +68,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer4.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Alejandro Martinez</p>
-                                <p class="text-[#676665] text-lg">Barcelona, Spain</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Alejandro Martinez</p>
+                                <p class="text-[#676665] md:text-lg text-sm">Barcelona, Spain</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
@@ -88,9 +88,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer5.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Priya Sharma</p>
-                                <p class="text-[#676665] text-lg">Delhi, India</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Priya Sharma</p>
+                                <p class="text-[#676665] md:text-lg text-sm">Delhi, India</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>
@@ -108,9 +108,9 @@
                     <section class="flex justify-between items-center">
                         <section class="flex">
                             <nuxt-img src="/images/Comments/Customer6.png" class="w-16 h-16"/>
-                            <section class="mt-1 ml-3">
-                                <p class="text-lg">Maria Rodriguez</p>
-                                <p class="text-[#676665] text-lg">Mexico City, Mexico</p>
+                            <section class="mt-3 md:mt-1 ml-3">
+                                <p class="md:text-lg text-sm">Maria Rodriguez</p>
+                                <p class="text-[#676665] md:text-lg text-sm">Mexico City, Mexico</p>
                             </section>
                         </section>
                         <a href="https://x.com/"><FontAwesomeIcon :icon="['fab', 'twitter']" class="text-[#C2B4A3] text-3xl" /></a>

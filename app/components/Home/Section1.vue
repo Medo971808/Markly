@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white px-6 py-5 h-full">
+    <section class="text-white px-6 py-5 h-full mt-16">
         <section class="relative">
             <NuxtImg src="/images/Image.png" alt="" class="h-auto w-full rounded-t-lg" />
             <NuxtLink to="/shop"

@@ -1,21 +1,63 @@
+<script setup>
+const menuOpen = ref(false)
+</script>
+
+<style>
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.3s linear;
+}
+.slide-enter-from, .slide-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+</style>
+
 <template>
-    <nav class="flex justify-between items-center px-6 py-3 border-b-[5px] border-dashed border-zinc-700">
-        <section class="flex items-center space-x-3">
-            <NuxtLink class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded" to="/">Home</NuxtLink>
-            <NuxtLink class="cursor-pointer border border-dashed border-zinc-700 text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>
-        </section>
-        <section class="text-white font-semibold text-3xl">
-            <span style="font-family: 'Pacifico', cursive;">Markly</span>
-        </section>
-        <section class="flex items-center space-x-3">
-            <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded" to="/shop">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
-                    class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.6 18h8.8a1 1 0 00.95-1.3L17 13M7 13V6h13" />
-                </svg>
-            </NuxtLink>
-            <NuxtLink class="cursor-pointer bg-[#AE9B84] text-black px-4 py-1 rounded font-medium" to="/contact">Contact</NuxtLink>
-        </section>
-    </nav>
+  <nav class="bg-[#2A2F38] fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-zinc-700 px-6 py-3">
+    <section class="flex justify-between items-center">
+      <section class="text-white font-semibold text-2xl md:text-3xl">
+        <span style="font-family: 'Pacifico', cursive;">Markly</span>
+      </section>
+      <button 
+        @click="menuOpen = !menuOpen" 
+        class="md:hidden text-white focus:outline-none"
+      >
+        <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <section class="hidden md:flex items-center space-x-3">
+        <NuxtLink class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded" to="/">Home</NuxtLink>
+        <NuxtLink class="cursor-pointer border border-dashed border-zinc-700 text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>
+        <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded" to="/shop">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
+            class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.6 18h8.8a1 1 0 00.95-1.3L17 13M7 13V6h13" />
+          </svg>
+        </NuxtLink>
+        <NuxtLink class="cursor-pointer bg-[#AE9B84] text-black px-4 py-1 rounded font-medium" to="/contact">Contact</NuxtLink>
+      </section>
+    </section>
+    <transition name="slide">
+      <section 
+        v-if="menuOpen" 
+        class="flex flex-col mt-4 space-y-2 md:hidden"
+      >
+        <NuxtLink class="cursor-pointer border-[3px] bg-black border-zinc-700 text-white px-3 py-1 rounded" to="/" @click="menuOpen=false">Home</NuxtLink>
+        <NuxtLink class="cursor-pointer text-white px-3 py-1" to="/products" @click="menuOpen=false">Products</NuxtLink>
+        <NuxtLink class="cursor-pointer p-2" to="/shop" @click="menuOpen=false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
+            class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.6 18h8.8a1 1 0 00.95-1.3L17 13M7 13V6h13" />
+          </svg>
+        </NuxtLink>
+        <NuxtLink class="cursor-pointer bg-[#AE9B84] text-black px-4 py-1 rounded font-medium" to="/contact" @click="menuOpen=false">Contact</NuxtLink>
+      </section>
+    </transition>
+  </nav>
 </template>

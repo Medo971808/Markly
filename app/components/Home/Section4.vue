@@ -38,7 +38,7 @@
                         </section>
                     </section>
                 </section>
-                <section class="p-4 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 lg:mt-10 flex items-center flex-col">
+                <section class="p-4 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-zinc-700 lg:mt-10 flex items-center flex-col">
                     <NuxtImg src="/images/Product3.png" class="w-full h-auto mb-2"/>
                     <section class="flex justify-between items-center w-full">
                         <label class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-zinc-700">Womenswear</label>

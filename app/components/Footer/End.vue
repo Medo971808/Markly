@@ -18,7 +18,7 @@
         </section>
         <section class="mb-20 h-full hidden lg:block">
             <section
-                class="border-t-[5px] border-b-[5px] border-dashed border-zinc-700 py-5 flex items-center justify-center">
+                class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] py-5 flex items-center justify-center">
                 <nuxt-img src="/images/icons/image.png" class="w-12" />
                 <p class="mx-5 text-[#333333] uppercase text-xl">T-Shirt</p>
                 <nuxt-img src="/images/icons/image.png" class="w-12" />
@@ -60,7 +60,7 @@
                 </section>
             </section>
         </section>
-        <section class="border-t-[5px] border-b-[5px] border-dashed border-zinc-700 px-6 py-12 grid md:grid-cols-3">
+        <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] px-6 py-12 grid md:grid-cols-3">
             <section>
                 <p>Home</p>
                 <section class="flex gap-6 text-[#676665] mt-5">

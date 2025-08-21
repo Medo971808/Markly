@@ -1,6 +1,8 @@
 <template>
     <Nav />
-    <slot />
+    <main>
+        <slot />
+    </main>
     <FooterComments />
     <FooterFAQ />
     <FooterEnd />

@@ -13,7 +13,7 @@ const menuOpen = ref(false)
 </style>
 
 <template>
-  <nav class="bg-[#2A2F38] md:bg-black fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-zinc-700 px-6 py-3">
+  <nav class="bg-[#2A2F38] md:bg-black fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-[#262626] px-6 py-3">
     <section class="flex justify-between items-center">
       <section class="text-white font-semibold text-2xl md:text-3xl">
         <span style="font-family: 'Pacifico', cursive;">Markly</span>
@@ -31,7 +31,7 @@ const menuOpen = ref(false)
       </button>
       <section class="hidden md:flex items-center space-x-3">
         <NuxtLink class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded" to="/">Home</NuxtLink>
-        <NuxtLink class="cursor-pointer border border-dashed border-zinc-700 text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>
+        <NuxtLink class="cursor-pointer border border-dashed border-[#262626] text-zinc-500 px-3 py-1 rounded" to="/products">Products</NuxtLink>
         <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded" to="/shop">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
             class="w-5 h-5">
@@ -47,7 +47,7 @@ const menuOpen = ref(false)
         v-if="menuOpen" 
         class="flex flex-col mt-4 space-y-2 md:hidden"
       >
-        <NuxtLink class="cursor-pointer border-[3px] bg-black border-zinc-700 text-white px-3 py-1 rounded" to="/" @click="menuOpen=false">Home</NuxtLink>
+        <NuxtLink class="cursor-pointer border-[3px] bg-black border-[#262626] text-white px-3 py-1 rounded" to="/" @click="menuOpen=false">Home</NuxtLink>
         <NuxtLink class="cursor-pointer text-white px-3 py-1" to="/products" @click="menuOpen=false">Products</NuxtLink>
         <NuxtLink class="cursor-pointer p-2" to="/shop" @click="menuOpen=false">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"

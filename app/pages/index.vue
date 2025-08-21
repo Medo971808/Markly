@@ -10,6 +10,7 @@ useSeoMeta({
     <HomeSection2 />
     <HomeSection3 />
     <HomeSection4 />
+    <NuxtPage />
   </NuxtLayout>
 </template>
 

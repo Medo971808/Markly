@@ -3,11 +3,11 @@
         <section class="border-dashed border-zinc-700 border-[5px] rounded-3xl">
             <h1 class="text-3xl lg:text-5xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
             <p class="mt-5 text-[#676665] ml-10">Each piece is crafted to enhance your fashion statement.</p>
-            <section class="ml-10 mt-10">
+            <section class="ml-10 mt-10 flex flex-wrap">
                 <button class="w-16 h-10 border-dashed border-zinc-700 border-[3px] rounded-lg">All</button>
-                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 ml-2 rounded-lg">Men</button>
-                <button class="w-24 h-10 bg-[#C2B4A3] text-[#0F0F0F] mx-2 rounded-lg">Women</button>
-                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 rounded-lg mt-3 md:mt-0">Kids</button>
+                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 ml-5 rounded-lg">Men</button>
+                <button class="w-24 h-10 bg-[#C2B4A3] text-[#0F0F0F] mx-5 rounded-lg">Women</button>
+                <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 rounded-lg mt-5 md:mt-0 basis-[60%] md:basis-auto">Kids</button>
             </section>
             <section class="grid md:grid-cols-2 lg:grid-cols-3">
                 <section class="p-4 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 mt-10 flex items-center flex-col">

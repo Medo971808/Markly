@@ -1,22 +1,24 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Markly'
+  title: 'Markly',
 })
 </script>
 
 <template>
-  <Nav />
-  <HomeSection1 />
-  <HomeSection2 />
-  <HomeSection3 />
-  <HomeSection4 />
-  <FooterComments />
+  <NuxtLayout>
+    <HomeSection1 />
+    <HomeSection2 />
+    <HomeSection3 />
+    <HomeSection4 />
+  </NuxtLayout>
 </template>
 
 <style>
 @import "@fortawesome/fontawesome-svg-core/styles.css";
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 body {
   background-color: black;
+  font-family: 'Roboto', sans-serif;
 }
 </style>

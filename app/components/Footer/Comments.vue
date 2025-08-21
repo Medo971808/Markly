@@ -7,7 +7,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700 mt-20">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer1.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer1.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Sarah Thompson</p>
                                 <p class="text-[#676665] md:text-lg text-sm">New York, USA</p>
@@ -27,7 +27,7 @@
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700 md:mt-20">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer2.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer2.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Rajesh Patel</p>
                                 <p class="text-[#676665] md:text-lg text-sm">Mumbai, India</p>
@@ -47,7 +47,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-zinc-700 lg:mt-20">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer3.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer3.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Emily Walker</p>
                                 <p class="text-[#676665] md:text-lg text-sm">London, UK</p>
@@ -67,7 +67,7 @@
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer4.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer4.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Alejandro Martinez</p>
                                 <p class="text-[#676665] md:text-lg text-sm">Barcelona, Spain</p>
@@ -87,7 +87,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer5.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer5.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Priya Sharma</p>
                                 <p class="text-[#676665] md:text-lg text-sm">Delhi, India</p>
@@ -107,7 +107,7 @@
                 <section class="p-10 border-t-[5px] border-dashed border-zinc-700">
                     <section class="flex justify-between items-center">
                         <section class="flex">
-                            <nuxt-img src="/images/Comments/Customer6.png" class="w-16 h-16"/>
+                            <nuxt-img src="/images/comments/Customer6.png" class="w-16 h-16"/>
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">Maria Rodriguez</p>
                                 <p class="text-[#676665] md:text-lg text-sm">Mexico City, Mexico</p>

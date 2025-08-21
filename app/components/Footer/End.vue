@@ -84,9 +84,9 @@
             </section>
             <section class="mt-10 md:mt-0">
                 <p>Subscribe to Newsletter</p>
-                <section class="flex items-center mt-2">
-                    <input type="text" placeholder="Your Email" class="w-[80%] mt-2 h-10 bg-[#1A1A1A] rounded-l-lg px-6">
-                    <button class="bg-[#1A1A1A] hover:bg-[#4A4A4A] h-10 mt-2 w-10 rounded-r-lg">
+                <section class="flex items-center mt-5 bg-[#1A1A1A] w-[80%] h-10 rounded-lg">
+                    <input type="email" placeholder="Your Email" class="h-full w-[90%] bg-[#1A1A1A] px-6 outline-none rounded-l-lg" />
+                    <button class="bg-[#1A1A1A] hover:bg-[#4A4A4A] h-full w-10 rounded-r-lg">
                         <FontAwesomeIcon :icon="['fas', 'arrow-right']" class="text-[#AE9B84]" />
                     </button>
                 </section>

@@ -5,7 +5,7 @@
             <section class="lg:flex justify-between text-[#B3B3B2]">
                 <section class="py-10 px-5 border-x-[5px] lg:border-x-0 lg:border-l-[5px] border-b-[5px] lg:rounded-bl-3xl border-zinc-700 border-dashed lg:w-[50%]">
                     <button class="w-16 h-10 border-dashed border-zinc-700 border-[3px] rounded-lg">All</button>
-                    <button class="w-16 h-10 border-[3px] border-dashed border-zinc-700 ml-2 rounded-lg">Men</button>
+                    <button class="w-24 h-10 border-[3px] border-dashed border-zinc-700 ml-2 rounded-lg">Men</button>
                     <button class="w-24 h-10 bg-[#C2B4A3] text-[#0F0F0F] mx-2 rounded-lg">Women</button>
                     <button
                         class="w-16 h-10 border-[3px] border-dashed border-zinc-700 rounded-lg mt-3 md:mt-0">Kids</button>

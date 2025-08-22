@@ -10,9 +10,11 @@
                         embrace a world of chic elegance delivered to your doorstep. Your style journey begins here.</p>
                 </section>
                 <section class="md:w-[30%] flex justify-center items-center">
-                    <nuxt-link src="/shop"
-                        class="w-[95%] text-white cursor-pointer md:w-40 h-12 md:h-10 flex items-center justify-center bg-[#1F1F1F] rounded-lg">Shop
-                        Now</nuxt-link>
+                    <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl flex justify-center items-center
+                text-white font-medium transition-all duration-300 w-[80%]
+                hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
+                        Shop Now
+                    </NuxtLink>
                 </section>
             </section>
         </section>
@@ -38,37 +40,49 @@
                 <h1 class="text-[6rem]" style="font-family: 'Pacifico', cursive;">Markly</h1>
             </section>
             <section class="flex gap-4 px-6 md:p-4 mt-5 md:mt-0">
-                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center">
-                    <a href="https://www.instagram.com/">
-                        <FontAwesomeIcon :icon="['fab', 'instagram']" class="text-black text-2xl" />
+                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
+                transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <FontAwesomeIcon :icon="['fab', 'instagram']"
+                            class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
-                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center">
-                    <a href="https://dribbble.com/">
-                        <FontAwesomeIcon :icon="['fab', 'dribbble']" class="text-black text-2xl" />
+
+                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
+                transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
+                    <a href="https://dribbble.com/" target="_blank">
+                        <FontAwesomeIcon :icon="['fab', 'dribbble']"
+                            class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
-                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center">
-                    <a href="https://x.com/">
-                        <FontAwesomeIcon :icon="['fab', 'twitter']" class="text-black text-2xl" />
+
+                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
+                transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
+                    <a href="https://x.com/" target="_blank">
+                        <FontAwesomeIcon :icon="['fab', 'twitter']"
+                            class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
-                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center">
-                    <a href="https://www.behance.net/">
-                        <FontAwesomeIcon :icon="['fab', 'behance']" class="text-black text-2xl" />
+
+                <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
+                transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
+                    <a href="https://www.behance.net/" target="_blank">
+                        <FontAwesomeIcon :icon="['fab', 'behance']"
+                            class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
             </section>
+
         </section>
         <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] px-6 py-12 grid md:grid-cols-3">
             <section>
                 <p>Home</p>
                 <section class="flex gap-6 text-[#676665] mt-5">
                     <ul class="flex space-x-4">
-                        <li class="flex items-center">Why Us</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2">About Us</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2">Testimonials</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2">FAQ's</li>
+                        <li class="flex items-center hover:text-[#AE9B84] cursor-pointer">Why Us</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">About Us</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">Testimonials</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">FAQ's</li>
                     </ul>
                 </section>
             </section>
@@ -76,16 +90,17 @@
                 <p>Products</p>
                 <section class="flex gap-6 text-[#676665] mt-5">
                     <ul class="flex space-x-4">
-                        <li class="flex items-center">Menswear</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2">Womenswear</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2">Kidswear</li>
+                        <li class="flex items-center hover:text-[#AE9B84] cursor-pointer">Menswear</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">Womenswear</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">Kidswear</li>
                     </ul>
                 </section>
             </section>
             <section class="mt-10 md:mt-0">
                 <p>Subscribe to Newsletter</p>
                 <section class="flex items-center mt-5 bg-[#1A1A1A] w-[80%] h-10 rounded-lg">
-                    <input type="email" placeholder="Your Email" class="h-full w-[90%] bg-[#1A1A1A] px-6 outline-none rounded-l-lg" />
+                    <input type="email" placeholder="Your Email"
+                        class="h-full w-[90%] bg-[#1A1A1A] px-6 outline-none rounded-l-lg" />
                     <button class="bg-[#1A1A1A] hover:bg-[#4A4A4A] h-full w-10 rounded-r-lg">
                         <FontAwesomeIcon :icon="['fas', 'arrow-right']" class="text-[#AE9B84]" />
                     </button>

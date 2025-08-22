@@ -16,10 +16,12 @@
                         <h1 class="text-4xl mr-5">$89.99</h1>
                         <p class="text-[#81807E]">( MRP incl. of all taxes )</p>
                     </section>
-                    <NuxtLink
-                        class="mr-5 w-32 h-12 rounded-xl bg-[#1F1F1F] cursor-pointer border-dashed border-[#262626] border-[5px] flex items-center justify-center mt-5 md:mt-0">
+                    <NuxtLink to="/cart" class="mr-5 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+                    flex items-center justify-center text-white font-medium
+                    transition-all duration-300 ease-in-out
+                    hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="white" class="w-5 h-5 mr-1">
+                            stroke="white" class="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.6 18h8.8a1 1 0 00.95-1.3L17 13M7 13V6h13" />
                         </svg>

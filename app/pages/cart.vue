@@ -44,7 +44,7 @@ const removeItem = (id: number) => {
         <p class="text-2xl font-bold">Total: ${{ totalPrice }}</p>
       </div>
       <div class="flex justify-end mt-4">
-        <NuxtLink to="/checkout" class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+        <NuxtLink class="bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
           Checkout

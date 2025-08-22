@@ -1,9 +1,11 @@
 <template>
-    <Nav />
-    <main>
-        <slot />
-    </main>
-    <FooterComments />
-    <FooterFAQ />
-    <FooterEnd />
+    <ClientOnly>
+        <Nav />
+        <main>
+            <slot />
+        </main>
+        <FooterComments />
+        <FooterFAQ />
+        <FooterEnd />
+    </ClientOnly>
 </template>

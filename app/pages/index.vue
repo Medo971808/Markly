@@ -5,13 +5,15 @@ useSeoMeta({
 </script>
 
 <template>
-  <NuxtLayout>
-    <HomeSection1 />
-    <HomeSection2 />
-    <HomeSection3 />
-    <HomeSection4 />
-    <NuxtPage />
-  </NuxtLayout>
+  <ClientOnly>
+    <NuxtLayout>
+      <HomeSection1 />
+      <HomeSection2 />
+      <HomeSection3 />
+      <HomeSection4 />
+      <NuxtPage />
+    </NuxtLayout>
+  </ClientOnly>
 </template>
 
 <style>

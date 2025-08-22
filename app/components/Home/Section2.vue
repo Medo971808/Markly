@@ -7,7 +7,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-[#262626] mt-20 flex flex-col justify-center">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Passionate Craftsmanship</h3>
@@ -16,7 +16,7 @@
                 <section class="p-10 border-t-[5px]  lg:border-r-[5px] border-dashed border-[#262626] md:mt-20">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['fas', 'tshirt']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Fashion Forward</h3>
@@ -25,7 +25,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-[#262626] lg:mt-20">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['far', 'face-smile-beam']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Customer-Centric Approach</h3>
@@ -34,7 +34,7 @@
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-[#262626]">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['fas', 'trophy']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Global Inspiration</h3>
@@ -43,7 +43,7 @@
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-[#262626]">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['fas', 'magic']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Empowering Your Style</h3>
@@ -52,7 +52,7 @@
                 <section class="p-10 border-t-[5px] border-dashed border-[#262626]">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">
                         <section class="rounded-full w-14 h-14 bg-[#1A1A1A] flex justify-center items-center">
-                            <FontAwesomeIcon :icon="['fas', 'timeline']" class="text-[#C2B4A3] text-2xl" />
+                                <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
                     <h3 class="text-2xl mt-10 mb-3">Sustainable Practices</h3>

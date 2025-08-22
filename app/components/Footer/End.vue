@@ -43,15 +43,15 @@
                 <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
                 transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
                     <a href="https://www.instagram.com/" target="_blank">
-                        <FontAwesomeIcon :icon="['fab', 'instagram']"
-                            class="text-black text-2xl hover:text-white transition-colors" />
+                            <FontAwesomeIcon :icon="['fab', 'instagram']"
+                                class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
 
                 <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
                 transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
                     <a href="https://dribbble.com/" target="_blank">
-                        <FontAwesomeIcon :icon="['fab', 'dribbble']"
+                            <FontAwesomeIcon :icon="['fab', 'dribbble']"
                             class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
@@ -59,20 +59,20 @@
                 <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
                 transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
                     <a href="https://x.com/" target="_blank">
-                        <FontAwesomeIcon :icon="['fab', 'twitter']"
-                            class="text-black text-2xl hover:text-white transition-colors" />
+                            <FontAwesomeIcon :icon="['fab', 'twitter']"
+                                class="text-black text-2xl hover:text-white transition-colors" />
+
                     </a>
                 </section>
 
                 <section class="w-12 h-12 bg-[#D6CEC3] rounded-md flex justify-center items-center 
                 transition-all duration-300 hover:bg-[#AE9B84] hover:scale-110 shadow-md cursor-pointer">
                     <a href="https://www.behance.net/" target="_blank">
-                        <FontAwesomeIcon :icon="['fab', 'behance']"
-                            class="text-black text-2xl hover:text-white transition-colors" />
+                            <FontAwesomeIcon :icon="['fab', 'behance']"
+                                class="text-black text-2xl hover:text-white transition-colors" />
                     </a>
                 </section>
             </section>
-
         </section>
         <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] px-6 py-12 grid md:grid-cols-3">
             <section>

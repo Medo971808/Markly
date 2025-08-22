@@ -85,7 +85,7 @@
                 <section class="box-border">
                     <section class="py-10 md:px-20 px-10 border-dashed border-[#262626] border-b-[5px]">
                         <h2 class="text-xl font-bold">Price</h2>
-                        <section class="md:flex items-center mt-5 justify-between">
+                        <section class="lg:flex items-center mt-5 justify-between">
                             <section class="flex items-center">
                                 <h1 class="text-4xl mr-5">$89.99</h1>
                                 <p class="text-[#81807E]">( MRP incl. of all taxes )</p>

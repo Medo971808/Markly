@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white px-6 pb-5 pt-20 h-full">
+    <section class="text-white px-6 pb-5 pt-20">
         <section class="border-[5px] border-dashed border-[#262626] rounded-3xl">
             <h1 class="lg:text-5xl text-3xl m-10">CRAFTING TRENDS, INSPIRING CONFIDENCE</h1>
             <p class="mt-5 text-[#676665] ml-10 md:ml-10">Explore a world of fashion at Markly, where trends meet affordability.</p>

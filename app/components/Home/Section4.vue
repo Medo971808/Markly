@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white px-6 pb-5 pt-20 h-full">
+    <section class="text-white px-6 pb-5 pt-20">
         <section class="border-dashed border-[#262626] border-[5px] rounded-3xl">
             <h1 class="text-3xl lg:text-5xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
             <p class="mt-5 text-[#676665] ml-10">Each piece is crafted to enhance your fashion statement.</p>

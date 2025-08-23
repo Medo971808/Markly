@@ -5,7 +5,6 @@ useSeoMeta({
 </script>
 
 <template>
-  <ClientOnly>
     <NuxtLayout>
       <HomeSection1 />
       <HomeSection2 />
@@ -13,7 +12,6 @@ useSeoMeta({
       <HomeSection4 />
       <NuxtPage />
     </NuxtLayout>
-  </ClientOnly>
 </template>
 
 <style>

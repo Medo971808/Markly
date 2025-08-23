@@ -1,8 +1,17 @@
+<script setup lang="ts">
+const { pending, error, filteredProducts } = useProducts()
+const categories = ["men's clothing", "women's clothing", "jewelery", "electronics"]
+
+const normalizedFilteredProducts = (category: string) => {
+  return filteredProducts(category).value ?? []
+}
+</script>
+
 <template>
-    <section class="text-white px-6 pb-5 pt-20 mt-20">
-        <section class="border-dashed border-[#262626] border-[5px] rounded-3xl">
-            <ProductsTitle />
-            <ProductsContent />
-        </section>
-    </section>
+  <ProductsContent
+    :pending="pending"
+    :error="error"
+    :categories="categories"
+    :filtered-products="normalizedFilteredProducts"
+  />
 </template>

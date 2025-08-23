@@ -63,7 +63,7 @@ const handleTitle = (title: string) => {
                     isMobile && (index === 0) ? 'mt-10' : '',
                     'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
                     ]">
-                    <NuxtImg :src="value.image" class="w-[50%] h-[300px] mb-2" />
+                    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" class="w-[50%] h-[300px] mb-2" />
                     <section class="flex justify-between items-center w-full">
                         <label
                             class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>

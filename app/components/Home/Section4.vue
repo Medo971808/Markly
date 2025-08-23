@@ -62,7 +62,7 @@ const handleTitle = (title: string) => {
                     isTablet && (index === 0 || index === 1) ? 'md:mt-10' : '',
                     isMobile && (index === 0) ? 'mt-10' : '',
                     'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
-                    ]">{{ index }}
+                    ]">
                     <NuxtImg :src="value.image" class="w-[50%] h-[300px] mb-2" />
                     <section class="flex justify-between items-center w-full">
                         <label

@@ -46,7 +46,7 @@ const handleTitle = (title: string) => {
                 isLaptop && (index + 1) % 3 === 0 ? 'lg:border-r-0' : isLaptop ? 'lg:border-r-[5px]' : '',
                 isTablet && (index + 1) % 2 === 0 ? 'md:border-r-0' : isTablet ? 'md:border-r-[5px]' : '',
                 'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col']">
-              <NuxtImg :src="value.image" class="w-[50%] h-[300px] mb-2" />
+              <img :src="value.image" class="w-[50%] h-[300px] mb-2" />
               <section class="flex justify-between items-center w-full">
                 <label class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
                 <NuxtLink to="/shop" class="bg-[#1F1F1F] -4 rounded-xl border-[3px] border-dashed border-[#AE9B84] 

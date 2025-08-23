@@ -10,7 +10,7 @@
         :to="`/products/${product.id}`"
         class="p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col cursor-pointer"
       >
-        <NuxtImg :src="product.image" class="w-full h-auto mb-2" />
+        <img :src="product.image" class="w-full h-auto mb-2" />
         <section class="flex justify-between items-center w-full">
           <label
             class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]"

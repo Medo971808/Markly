@@ -20,7 +20,7 @@
                 transition-all duration-300 ease-in-out
                 hover:bg-gradient-to-r hover:from-[#C2B4A3] hover:to-[#E5D5C5]
                 hover:scale-105 hover:shadow-lg hover:shadow-[#C2B4A3]/40">
-                    <NuxtImg src="images/icons/bag.png" class="w-5 mr-1" />
+                    <img src="images/icons/bag.png" class="w-5 mr-1" />
                     Shop Now
                 </NuxtLink>
             </section>
@@ -41,7 +41,7 @@
          transition-all duration-300 ease-in-out
          hover:bg-gradient-to-r hover:from-[#C2B4A3] hover:to-[#E5D5C5]
          hover:scale-105 hover:shadow-lg hover:shadow-[#C2B4A3]/40">
-                <NuxtImg src="images/icons/bag.png" class="w-5 mr-1" />
+                <img src="images/icons/bag.png" class="w-5 mr-1" />
                 Shop Now
             </NuxtLink>
         </section>
@@ -49,11 +49,11 @@
     <section class="mt-10 border-dashed border-[#262626] border-t-[5px] border-b-[5px] grid md:grid-cols-2">
         <section
             class="md:flex items-center md:border-r-[5px] border-dashed border-[#262626] md:p-10 p-5 border-b-[5px] md:border-b-0">
-            <NuxtImg src="images/productDetails/Product1.png" class="md:w-[682px] w-full md:h-[451px]" />
+            <img src="images/productDetails/Product1.png" class="md:w-[682px] w-full md:h-[451px]" />
         </section>
         <section class="flex items-center flex-col justify-center py-10">
-            <NuxtImg src="images/productDetails/Product2.png" class="md:w-[518px] md:h-[215.5px] mb-5" />
-            <NuxtImg src="images/productDetails/Product3.png" class="md:w-[518px] md:h-[215.5px]" />
+            <img src="images/productDetails/Product2.png" class="md:w-[518px] md:h-[215.5px] mb-5" />
+            <img src="images/productDetails/Product3.png" class="md:w-[518px] md:h-[215.5px]" />
         </section>
     </section>
     <section class="border-b-[5px] border-dashed border-[#262626]">

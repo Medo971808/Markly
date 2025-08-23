@@ -64,7 +64,7 @@ const handleTitle = (title: string) => {
                         'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
                     ]">
                     <section class="w-full h-full flex items-center justify-center bg-[#1F1F1F] mb-5">
-                        <img :src="value.image" class=" w-3/4 h-auto" />
+                        <img :src="value.image" class=" h-3/4 w-auto" />
                     </section>
                     <section class="flex justify-between items-center w-full">
                         <label

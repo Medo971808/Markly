@@ -34,24 +34,21 @@ const handleTitle = (title: string) => {
       </section>
       <section v-else>
         <section v-for="(i, j) in categories" :key="i">
-          <h3 
-            :class="['text-2xl md:text-3xl uppercase border-t-[5px] text-center py-10 border-dashed border-[#262626]',
+          <h3 :class="['text-2xl md:text-3xl uppercase border-t-[5px] text-center py-10 border-dashed border-[#262626]',
             j === 0 ? 'mt-10' : '']">{{ i }}</h3>
           <section class="grid md:grid-cols-2 lg:grid-cols-3">
-            <NuxtLink
-              v-for="(value, index) in filteredProducts(i)"
-              :key="value.id"
-              :to="`/products/${value.id}`"
+            <NuxtLink v-for="(value, index) in filteredProducts(i)" :key="value.id" :to="`/products/${value.id}`"
               :class="[
                 isLaptop && (index + 1) % 3 === 0 ? 'lg:border-r-0' : isLaptop ? 'lg:border-r-[5px]' : '',
                 isTablet && (index + 1) % 2 === 0 ? 'md:border-r-0' : isTablet ? 'md:border-r-[5px]' : '',
                 'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col']">
-              <img :src="value.image" class="w-[50%] h-[300px] mb-2" />
+              <img :src="value.image" class="w-[50%] md:h-[300px] mb-2" />
               <section class="flex justify-between items-center w-full">
-                <label class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
-                <NuxtLink to="/shop" class="bg-[#1F1F1F] -4 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
-                  text-white font-medium transition-all duration-300 
-                  hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
+                <label
+                  class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
+                <NuxtLink to="/shop" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                text-white font-medium transition-all duration-300 
+                hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                   Shop Now
                 </NuxtLink>
               </section>
@@ -61,6 +58,11 @@ const handleTitle = (title: string) => {
                   <p class="text-[#81807E] text-lg">Fit:<span class="text-white"> Ankle</span></p>
                   <p class="text-[#81807E] text-lg">Price: <span class="text-white">$ {{ value.price }}</span></p>
                 </section>
+                <NuxtLink to="/shop" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                text-white font-medium transition-all duration-300 
+                hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
+                  Shop Now
+                </NuxtLink>
               </section>
             </NuxtLink>
           </section>

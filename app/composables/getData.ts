@@ -15,7 +15,6 @@ export function useProducts() {
   const { data, pending, error } = useAsyncData<Product[]>('products', () =>
     $fetch('https://fakestoreapi.com/products')
   )
-
   const filteredProducts = (category: string = 'All') =>
     computed(() =>
       category

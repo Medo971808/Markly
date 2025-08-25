@@ -72,7 +72,7 @@ const ratingStars = computed(() => {
             class="md:flex items-center md:border-r-[5px] border-dashed border-[#262626] md:p-10 p-5 border-b-[5px] md:border-b-0 ">
             <img :src="product?.image" class="w-full object-contain h-auto rounded-xl">
         </section>
-        <section class="flex items-center flex-col justify-center py-10 space-y-5">
+        <section class="flex items-center flex-col justify-center p-10 space-y-5">
             <img :src="product?.image" class="h-[48%] object-contain w-auto rounded-xl">
             <img :src="product?.image" class="h-[48%] object-contain w-auto rounded-xl">
         </section>

@@ -10,7 +10,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Passionate Craftsmanship</h3>
+                    <h3 class="text-xl mt-10 mb-3">Passionate Craftsmanship</h3>
                     <p class="text-[#81807E] text-md">Every garment at Markly is crafted with passion, reflecting our commitment to quality and innovation.</p>
                 </section>
                 <section class="p-10 border-t-[5px]  lg:border-r-[5px] border-dashed border-[#262626] md:mt-20">
@@ -19,7 +19,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Fashion Forward</h3>
+                    <h3 class="text-xl mt-10 mb-3">Fashion Forward</h3>
                     <p class="text-[#81807E] text-md">We're more than a brand; we're trendsetters, curating styles that empower and inspire confidence.</p>
                 </section>
                 <section class="p-10 border-t-[5px] md:border-r-[5px] lg:border-r-0 border-dashed border-[#262626] lg:mt-20">
@@ -28,7 +28,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Customer-Centric Approach</h3>
+                    <h3 class="text-xl mt-10 mb-3">Customer-Centric Approach</h3>
                     <p class="text-[#81807E] text-md">At Markly, our customers are at the heart of everything we do. Your satisfaction is our measure of success.</p>
                 </section>
                 <section class="p-10 border-t-[5px] lg:border-r-[5px] border-dashed border-[#262626]">
@@ -37,7 +37,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Global Inspiration</h3>
+                    <h3 class="text-xl mt-10 mb-3">Global Inspiration</h3>
                     <p class="text-[#81807E] text-md">Influenced by global trends, we bring you a sectionerse and dynamic collection, embodying the spirit of fashion from around the world.</p>
                 </section>
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-[#262626]">
@@ -46,7 +46,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Empowering Your Style</h3>
+                    <h3 class="text-xl mt-10 mb-3">Empowering Your Style</h3>
                     <p class="text-[#81807E] text-md">Beyond clothing, Markly is a lifestyle. Join us on a journey of self-expression and empowerment through fashion.</p>
                 </section>
                 <section class="p-10 border-t-[5px] border-dashed border-[#262626]">
@@ -55,7 +55,7 @@
                                 <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#C2B4A3] text-2xl" />
                         </section>
                     </section>
-                    <h3 class="text-2xl mt-10 mb-3">Sustainable Practices</h3>
+                    <h3 class="text-xl mt-10 mb-3">Sustainable Practices</h3>
                     <p class="text-[#81807E] text-md">Markly is committed to sustainability, integrating eco-friendly practices into our production process.</p>
                 </section>
             </section>

@@ -17,6 +17,8 @@ const handleTitle = (title: string) => {
   }
   return title
 }
+
+const emit = defineEmits(["add-to-cart"])
 </script>
 
 <template>
@@ -48,7 +50,8 @@ const handleTitle = (title: string) => {
               <section class="flex justify-between items-center w-full">
                 <label
                   class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
-                <NuxtLink to="/cart" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                <NuxtLink @click.prevent="emit('add-to-cart', value)"
+                to="/cart" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                   Add To Cart
@@ -60,7 +63,8 @@ const handleTitle = (title: string) => {
                   <p class="text-[#81807E] text-lg">Fit:<span class="text-white"> Ankle</span></p>
                   <p class="text-[#81807E] text-lg">Price: <span class="text-white">$ {{ value.price }}</span></p>
                 </section>
-                <NuxtLink to="/cart" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                <NuxtLink  @click.prevent="emit('add-to-cart', value)"
+                to="/cart" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                   Add To Cart

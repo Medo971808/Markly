@@ -5,6 +5,8 @@ const categories = ["men's clothing", "women's clothing", "jewelery", "electroni
 const normalizedFilteredProducts = (category: string) => {
   return filteredProducts(category).value ?? []
 }
+
+const { addToCart } = useCart()
 </script>
 
 <template>
@@ -13,5 +15,6 @@ const normalizedFilteredProducts = (category: string) => {
     :error="error"
     :categories="categories"
     :filtered-products="normalizedFilteredProducts"
+    @add-to-cart="addToCart"
   />
 </template>

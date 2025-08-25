@@ -137,7 +137,7 @@ const ratingStars = computed(() => {
               <h1 class="text-2xl mr-5">${{ product.price }}</h1>
               <p class="text-[#81807E]">( MRP incl. of all taxes )</p>
             </section>
-            <NuxtLink
+            <NuxtLink @click.prevent="emit('add-to-cart', product)"
               to="/cart"
               class="mr-5 mt-5 md:mt-0 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
               flex items-center justify-center text-white font-medium

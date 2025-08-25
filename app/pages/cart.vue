@@ -24,11 +24,12 @@ const removeItem = (id: number) => {
       <section 
         v-for="item in cart" 
         :key="item.id" 
-        class="flex items-center justify-between bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#262626]"
-      >
-        <img :src="item.image" alt="" class="w-24 h-24 object-cover rounded-lg" />
+        class="flex items-center justify-between bg-[#1F1F1F] p-4 rounded-xl border-[3px] border-dashed border-[#262626]">
+        <NuxtLink :to="`/products/${item.id}`">
+          <img :src="item.image" alt="" class="w-24 h-auto object-cover rounded-lg" />
+        </NuxtLink>
         <section class="flex-1 ml-4">
-          <p class="text-xl font-semibold text-white">{{ item.title }}</p>
+          <NuxtLink :to="`/products/${item.id}`" class="text-xl font-semibold text-white">{{ item.title }}</NuxtLink>
           <p class="text-[#81807E] mt-1">Price: ${{ item.price }}</p>
           <section class="flex items-center mt-2 space-x-2 text-white">
             <button @click="decrease(item)" class="px-2 bg-[#262626] rounded">-</button>

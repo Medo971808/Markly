@@ -71,8 +71,8 @@ const emit = defineEmits(["add-to-cart"])
                         isMobile && (index === 0) ? 'mt-10' : '',
                         'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
                     ]">
-                    <section class="w-full h-full flex items-center justify-center bg-[#1F1F1F] mb-5">
-                        <img :src="value.image" class=" h-3/4 w-auto" />
+                    <section class="w-full h-full flex items-center justify-center mb-5 p-10 md:p-3">
+                        <img :src="value.image" class="h-auto w-full object-contain" />
                     </section>
                     <section class="flex justify-between items-center w-full">
                         <label

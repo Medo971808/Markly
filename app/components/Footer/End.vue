@@ -80,7 +80,9 @@
                 <section class="flex gap-6 text-[#676665] mt-5">
                     <ul class="flex space-x-4">
                         <li class="flex items-center hover:text-[#AE9B84] cursor-pointer">Why Us</li>
-                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">About Us</li>
+                        <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">
+                            <NuxtLink to="/about-us">About Us</NuxtLink>
+                        </li>
                         <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">Testimonials</li>
                         <li class="flex items-center before:content-['•'] before:mx-2 before:text-[#AE9B84] hover:text-[#AE9B84] cursor-pointer">FAQ's</li>
                     </ul>

@@ -20,13 +20,13 @@ const ratingStars = computed(() => {
         <p class="mt-5 text-xl text-[#AE9B84] font-semibold">Loading products...</p>
     </section>
     <p v-else-if="error" class="text-red-500">Failed to load product</p>
-    <section class="flex flex-col md:flex-row justify-between items-start md:items-center" v-else-if="product">
-        <section class="flex flex-col m-10">
+    <section class="flex flex-col p-9 md:flex-row md:justify-between md:items-center" v-else-if="product">
+        <section class="flex flex-col">
             <h1 class="text-xl md:text-3xl uppercase">{{ product.title }}</h1>
-            <span class="mt-2 text-[#676665]">{{ product.description }}</span>
+            <span class="mt-2 text-[#676665] text-sm md:text-lg">{{ product.description }}</span>
             <span class="inline-block mt-2 bg-[#152011] text-[#8AF265] rounded-xl w-24 text-center">In stock</span>
-            <section class="mt-5 flex md:hidden">
-                <NuxtLink to="/cart" class="mr-5 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+            <section class="mt-5 md:hidden">
+                <NuxtLink to="/cart" class="mr-5 w-full mb-5 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
                     flex items-center justify-center text-white font-medium
                     transition-all duration-300 ease-in-out
                     hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">
@@ -37,7 +37,7 @@ const ratingStars = computed(() => {
                     </svg>
                     Add To Cart
                 </NuxtLink>
-                <NuxtLink to="/products" class="mr-5 w-32 h-12 rounded-xl bg-[#C2B4A3] flex items-center justify-center text-black font-medium
+                <NuxtLink to="/products" class="mr-5 w-full h-12 rounded-xl bg-[#C2B4A3] flex items-center justify-center text-black font-medium
                 transition-all duration-300 ease-in-out
                 hover:bg-gradient-to-r hover:from-[#C2B4A3] hover:to-[#E5D5C5]
                 hover:scale-105 hover:shadow-lg hover:shadow-[#C2B4A3]/40">
@@ -70,11 +70,11 @@ const ratingStars = computed(() => {
     <section class="mt-10 border-dashed border-[#262626] border-t-[5px] border-b-[5px] grid md:grid-cols-2">
         <section
             class="md:flex items-center md:border-r-[5px] border-dashed border-[#262626] md:p-10 p-5 border-b-[5px] md:border-b-0 ">
-            <NuxtImg :src="product?.image" class="w-full object-cover aspect-square rounded-xl" />
+            <img :src="product?.image" class="w-full object-contain h-auto rounded-xl">
         </section>
         <section class="flex items-center flex-col justify-center py-10 space-y-5">
-            <NuxtImg :src="product?.image" class="h-[48%] object-cover aspect-square rounded-xl" />
-            <NuxtImg :src="product?.image" class="h-[48%] object-cover aspect-square rounded-xl" />
+            <img :src="product?.image" class="h-[48%] object-contain w-auto rounded-xl">
+            <img :src="product?.image" class="h-[48%] object-contain w-auto rounded-xl">
         </section>
     </section>
     <section class="border-b-[5px] border-dashed border-[#262626]">
@@ -102,7 +102,7 @@ const ratingStars = computed(() => {
             </section>
         </section>
     </section>
-    <section class="grid md:grid-cols-2">
+    <section class="md:grid md:grid-cols-2">
         <section class="md:border-r-[5px] border-dashed border-[#262626]">
             <section class="border-b-[5px] border-dashed border-[#262626] p-10">
                 <p class="text-xl font-bold">Materials</p>
@@ -115,11 +115,11 @@ const ratingStars = computed(() => {
             <section class="py-10 md:px-20 px-10 border-dashed border-[#262626] border-b-[5px]">
                 <h2 class="text-xl font-bold">Price</h2>
                 <section class="lg:flex items-center mt-5 justify-between">
-                    <section class="flex items-center">
-                        <h1 class="text-4xl mr-5">${{ product?.price }}</h1>
+                    <section class="md:flex items-center">
+                        <h1 class="text-2xl mr-5">${{ product?.price }}</h1>
                         <p class="text-[#81807E]">( MRP incl. of all taxes )</p>
                     </section>
-                    <NuxtLink to="/cart" class="mr-5 mt-2 md:mt-0 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+                    <NuxtLink to="/cart" class="mr-5 mt-5 md:mt-0 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
                     flex items-center justify-center text-white font-medium
                     transition-all duration-300 ease-in-out
                     hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">
@@ -145,17 +145,17 @@ const ratingStars = computed(() => {
             <section class="py-10 md:px-20 px-10 text-xl font-bold border-dashed border-[#262626] border-b-[5px]">
                 <h1>Rating & Review</h1>
             </section>
-            <section class="grid grid-cols-2 py-10 md:px-20 px-10">
+            <section class="md:grid md:grid-cols-2 py-10 md:px-20 px-10">
                 <section>
                     <h1 class="text-4xl font-bold tracking-[0.2rem]">{{ product?.rating?.rate }}</h1>
                     <section class="flex my-5">
-                        <FontAwesomeIcon v-for="n in ratingStars" :key="n" :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-md" />
+                        <FontAwesomeIcon v-for="n in ratingStars" :key="n" :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
                     </section>
                     <p class="text-[#81807E]">{{ product?.rating?.count }} Ratings</p>
                 </section>
-                <section class="flex flex-col gap-3">
+                <section class="flex flex-col gap-3 mt-5">
                     <section class="flex items-center" v-for="n in 5">
-                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-md" />
+                        <FontAwesomeIcon :icon="['fas', 'star']" class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
                         <p class="text-xl text-[#81807E] mx-2">0{{ 6 - n }}</p>
                         <section
                             class="flex-1 h-5 bg-[#1A1A1A] rounded-full overflow-hidden flex items-center border border-[#262626] px-2">

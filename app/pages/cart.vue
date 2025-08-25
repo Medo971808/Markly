@@ -29,7 +29,7 @@ const removeItem = (id: number) => {
           <img :src="item.image" alt="" class="w-24 h-auto object-cover rounded-lg" />
         </NuxtLink>
         <section class="flex-1 ml-4">
-          <NuxtLink :to="`/products/${item.id}`" class="text-xl font-semibold text-white">{{ item.title }}</NuxtLink>
+          <NuxtLink :to="`/products/${item.id}`" class="text-lg font-semibold text-white">{{ item.title }}</NuxtLink>
           <p class="text-[#81807E] mt-1">Price: ${{ item.price }}</p>
           <section class="flex items-center mt-2 space-x-2 text-white">
             <button @click="decrease(item)" class="px-2 bg-[#262626] rounded">-</button>

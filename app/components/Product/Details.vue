@@ -90,7 +90,7 @@ const ratingStars = computed(() => {
                 </section>
             </section>
             <section class="py-10 md:px-20 px-10">
-                <h1 class="text-3xl">Features</h1>
+                <h1 class="text-xl">Features</h1>
                 <ul class="list-disc pl-6 mt-10 text-[#81807E]">
                     <li>Distressed detailing for a rugged look</li>
                     <li>Button-up front closure with engraved metal buttons</li>

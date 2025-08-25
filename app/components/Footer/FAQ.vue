@@ -1,7 +1,7 @@
 <template>
     <section class="text-white px-6 pb-5 pt-20">
         <section class="border-dashed border-[#262626] border-[5px] rounded-3xl">
-            <h1 class="uppercase lg:text-5xl text-3xl m-10">Have Questions? We Have Answers.</h1>
+            <h1 class="uppercase text-xl md:text-3xl m-10">Have Questions? We Have Answers.</h1>
             <p class="mt-5 text-[#676665] ml-10 md:ml-10 text-md flex flex-wrap">Ease into the world of Markly with clarity. Our FAQs cover a spectrum of topics.</p>
             <section class="py-10 ml-10 flex flex-wrap gap-5">
                     <button class="w-24 h-10 border-dashed border-[#262626] border-[3px] rounded-lg">All</button>

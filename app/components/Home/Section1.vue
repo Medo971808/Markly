@@ -9,7 +9,7 @@
                     <button class="w-24 h-10 bg-[#C2B4A3] text-[#0F0F0F] mx-2 rounded-lg">Women</button>
                     <button
                         class="w-16 h-10 border-[3px] border-dashed border-[#262626] rounded-lg mt-3 md:mt-0">Kids</button>
-                    <h1 class="text-3xl lg:text-6xl my-5 text-white">ElEVATE YOUR STYLE WITH MARKLY</h1>
+                    <h1 class="text-xl md:text-3xl my-5 text-white">ElEVATE YOUR STYLE WITH MARKLY</h1>
                     <p class="text-[#676665]">Explore a world of fashion at Markly, where trends meet affordability.
                         Immerse yourself in the latest styles and seize exclusive promotions.</p>
                 </section>

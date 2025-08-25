@@ -1,4 +1,4 @@
-export interface Product {
+export interface Products {
   id: number
   title: string
   price: number
@@ -12,7 +12,7 @@ export interface Product {
 }
 
 export function useProducts() {
-  const { data, pending, error } = useAsyncData<Product[]>('products', () =>
+  const { data, pending, error } = useAsyncData<Products[]>('products', () =>
     $fetch('https://fakestoreapi.com/products')
   )
   const filteredProducts = (category: string = 'All') =>

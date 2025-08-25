@@ -10,14 +10,3 @@ useSeoMeta({
   <HomeSection3 />
   <HomeSection4 />
 </template>
-
-<style>
-@import "@fortawesome/fontawesome-svg-core/styles.css";
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-body {
-  background-color: black;
-  font-family: 'Roboto', sans-serif;
-}
-</style>

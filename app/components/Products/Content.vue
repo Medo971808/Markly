@@ -22,7 +22,7 @@ const handleTitle = (title: string) => {
 <template>
   <section class="text-white pt-20 px-6 pb-5">
     <section class="border-[5px] border-dashed border-[#262626] rounded-3xl">
-      <h1 class="text-3xl lg:text-5xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
+      <h1 class="text-xl md:text-3xl m-10 uppercase">Elevate Your Style with Our Latest Collection</h1>
       <p class="mt-5 text-[#676665] ml-10">Each piece is crafted to enhance your fashion statement.</p>
       <section v-if="pending" class="flex flex-col justify-center items-center py-20">
         <section class="w-16 h-16 border-4 border-dashed rounded-full border-[#AE9B84] animate-spin"></section>
@@ -48,10 +48,10 @@ const handleTitle = (title: string) => {
               <section class="flex justify-between items-center w-full">
                 <label
                   class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
-                <NuxtLink to="/shop" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                <NuxtLink to="/cart" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
-                  Shop Now
+                  Add To Cart
                 </NuxtLink>
               </section>
               <section class="w-full">
@@ -60,10 +60,10 @@ const handleTitle = (title: string) => {
                   <p class="text-[#81807E] text-lg">Fit:<span class="text-white"> Ankle</span></p>
                   <p class="text-[#81807E] text-lg">Price: <span class="text-white">$ {{ value.price }}</span></p>
                 </section>
-                <NuxtLink to="/shop" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                <NuxtLink to="/cart" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
-                  Shop Now
+                  Add To Cart
                 </NuxtLink>
               </section>
             </NuxtLink>

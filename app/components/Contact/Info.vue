@@ -1,7 +1,7 @@
 <template>
     <section class="text-white px-6 pb-5 pt-20 mt-20">
         <section class="border-dashed border-[#262626] border-[5px] rounded-3xl">
-            <h1 class="text-3xl lg:text-5xl m-10 uppercase">Your Partner in Every Step of Your Fashion Journey.</h1>
+            <h1 class="text-xl md:text-3xl m-10 uppercase">Your Partner in Every Step of Your Fashion Journey.</h1>
             <p class="mt-5 text-[#676665] ml-10 mb-10">24/7 Assistance for Seamless Shopping and Unmatched Customer Satisfaction.</p>
             <section class="border-dashed border-[#262626] border-t-[5px] border-b-[5px]">
                 <h3 class="text-xl lg:text-3xl m-10 uppercase">Contact Information</h3>

@@ -4,13 +4,13 @@
             <section
                 class="bg-[#C2B4A3] h-[367px] md:h-[278px] text-black md:flex justify-between rounded-3xl items-center p-1 md:p-0">
                 <section class="md:w-[70%]">
-                    <h1 class="uppercase lg:text-5xl text-2xl mx-10 mt-10 font-bold">elevate your wardrobe</h1>
+                    <h1 class="uppercase text-xl md:text-3xl mx-10 mt-10 font-bold">elevate your wardrobe</h1>
                     <p class="my-5 ml-10 mr-10">Don't miss out - experience the epitome of fashion by clicking 'Buy Now'
                         and
                         embrace a world of chic elegance delivered to your doorstep. Your style journey begins here.</p>
                 </section>
                 <section class="md:w-[30%] flex justify-center items-center">
-                    <NuxtLink to="/shop" class="bg-[#1F1F1F] p-4 rounded-xl flex justify-center items-center
+                    <NuxtLink to="/products" class="bg-[#1F1F1F] p-4 rounded-xl flex justify-center items-center
                 text-white font-medium transition-all duration-300 w-[80%]
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                         Shop Now

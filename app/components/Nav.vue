@@ -1,5 +1,14 @@
-<script setup>
+<script setup lang="ts">
 const menuOpen = ref(false)
+const currentPage = ref('home')
+const linkClass = (page: string = 'home') => {
+    return currentPage.value === page ?
+    'border-[3px] bg-black border-[#262626]' : ''
+}
+const handleNav = (nav: string) => {
+  menuOpen.value = false
+  currentPage.value = nav
+}
 </script>
 
 <style>
@@ -31,8 +40,7 @@ const menuOpen = ref(false)
       </button>
       <section class="hidden md:flex items-center space-x-3">
         <NuxtLink class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]" to="/">Home</NuxtLink>
-        <NuxtLink class="cursor-pointer border border-dashed border-[#262626] text-zinc-500 px-3 py-1 rounded transition duration-300 hover:text-white hover:border-[#AE9B84]" to="/products">Products</NuxtLink>
-        <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded transition duration-300 hover:bg-[#383838]" to="/shop">
+        <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded transition duration-300 hover:bg-[#383838]" to="/products">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
             class="w-5 h-5 transition-transform duration-300 hover:scale-110">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -47,9 +55,11 @@ const menuOpen = ref(false)
         v-if="menuOpen" 
         class="flex flex-col mt-4 space-y-2 md:hidden"
       >
-        <NuxtLink class="cursor-pointer border-[3px] bg-black border-[#262626] text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]" to="/" @click="menuOpen=false">Home</NuxtLink>
-        <NuxtLink class="cursor-pointer text-white px-3 py-1 transition duration-300 hover:text-[#AE9B84]" to="/products" @click="menuOpen=false">Products</NuxtLink>
-        <NuxtLink class="cursor-pointer p-2 flex items-center text-white transition duration-300 hover:text-[#AE9B84]" to="/shop" @click="menuOpen=false">
+        <NuxtLink 
+        class="cursor-pointer text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]" to="/"
+        :class="linkClass('home')"
+        @click="handleNav('home')">Home</NuxtLink>
+        <NuxtLink class="cursor-pointer p-2 flex items-center text-white transition duration-300 hover:bg-[#383838]" to="/products" :class="linkClass('shop')" @click="handleNav('shop')">
           <p class="mr-3">Shop Now</p>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
             class="w-5 h-5 transition-transform duration-300 hover:scale-110">
@@ -57,7 +67,7 @@ const menuOpen = ref(false)
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.6 18h8.8a1 1 0 00.95-1.3L17 13M7 13V6h13" />
           </svg>
         </NuxtLink>
-        <NuxtLink class="cursor-pointer bg-[#AE9B84] text-black px-4 py-1 rounded font-medium transition duration-300 hover:bg-[#c9b7a0]" to="/contact" @click="menuOpen=false">Contact</NuxtLink>
+        <NuxtLink class="cursor-pointer p-2 flex items-center text-white transition duration-300 hover:bg-[#383838]" to="/contact" :class="linkClass('contact')" @click="handleNav('contact')">Contact</NuxtLink>
       </section>
     </transition>
   </nav>

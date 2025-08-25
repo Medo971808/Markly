@@ -80,8 +80,8 @@ const ratingStars = computed(() => {
     <section class="border-b-[5px] border-dashed border-[#262626]">
         <section class="grid md:grid-cols-2">
             <section
-                class="md:border-r-[5px] border-b-[5px] md:border-b-0 border-dashed border-[#262626] grid grid-rows-2">
-                <h1 class="text-3xl m-10">Materials, Care and origin</h1>
+                class="md:border-r-[5px] border-b-[5px] md:border-b-0 border-dashed border-[#262626]">
+                <h1 class="text-xl md:text-3xl m-10">Materials, Care and origin</h1>
                 <section class="border-t-[5px] border-dashed border-[#262626] p-10">
                     <h3 class="text-xl font-bold">Join Life</h3>
                     <p class="text-[#81807E] mt-3">Tracing its roots back to ancient Greek draped garments, has

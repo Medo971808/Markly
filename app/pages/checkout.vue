@@ -17,6 +17,7 @@ const totalPrice = computed(() =>
 )
 
 const checkout = async () => {
+    console.log(cart.value)
     try {
         if (!name.value || !email.value || !address.value || !city.value || !zip.value) {
             emptyInputs.value = true

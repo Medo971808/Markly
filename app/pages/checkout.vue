@@ -50,7 +50,7 @@ const checkout = async () => {
         })
         const r = { ...res }
         console.log(r)
-        const result = Object.values(r).slice(6).join('')
+        const result = Object.values(r).slice(8).slice(0,-2).join('')
         console.log(result)
 
         if (!res["url"]) {

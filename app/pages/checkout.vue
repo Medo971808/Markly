@@ -35,7 +35,6 @@ const checkout = async () => {
         const origin = window.location.origin
         console.log(origin)
         const itemsForStripe = cart.value.map(item => ({
-            id: item.id,
             name: item.title,
             price: item.price * 100,
             quantity: item.quantity

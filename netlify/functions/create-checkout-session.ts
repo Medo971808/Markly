@@ -32,7 +32,7 @@ export const handler: Handler = async (event) => {
       mode: 'payment',
       line_items,
       success_url: `${origin}/success`,
-      cancel_url: `${origin}/checkout`,
+      cancel_url: `${origin}/cancel`,
     })
 
     return {

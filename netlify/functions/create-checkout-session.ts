@@ -10,6 +10,7 @@ export const handler: Handler = async (event) => {
     const { items, origin } = JSON.parse(event.body || '{}')
 
     if (!items || items.length === 0) {
+      console.log(items)
       return {
         statusCode: 400,
         body: JSON.stringify({ error: 'No items in cart' }),

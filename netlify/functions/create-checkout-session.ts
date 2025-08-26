@@ -2,9 +2,9 @@ import type { Handler } from '@netlify/functions'
 import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2025-07-30.basil',
+  apiVersion: '2025-07-30.basil'
 })
-console.log(1)
+
 export const handler: Handler = async (event) => {
   try {
     const { items, origin } = JSON.parse(event.body || '{}')
@@ -12,19 +12,17 @@ export const handler: Handler = async (event) => {
     if (!items || items.length === 0) {
       return {
         statusCode: 400,
-        body: JSON.stringify({ error: 'No items in cart' }),
+        body: JSON.stringify({ error: 'No items in cart' })
       }
     }
 
     const line_items = items.map((item: any) => ({
       price_data: {
         currency: 'usd',
-        product_data: {
-          name: item.name,
-        },
-        unit_amount: item.price,
+        product_data: { name: item.name },
+        unit_amount: item.price
       },
-      quantity: item.quantity,
+      quantity: item.quantity
     }))
 
     const session = await stripe.checkout.sessions.create({
@@ -32,18 +30,18 @@ export const handler: Handler = async (event) => {
       mode: 'payment',
       line_items,
       success_url: `${origin}/success`,
-      cancel_url: `${origin}/cancel`,
+      cancel_url: `${origin}/cancel`
     })
 
     return {
       statusCode: 200,
-      body: JSON.stringify({ url: session.url }),
+      body: JSON.stringify({ url: session.url })
     }
   } catch (error) {
     console.error(error)
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Server error' }),
+      body: JSON.stringify({ error: 'Server error' })
     }
   }
 }

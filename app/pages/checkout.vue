@@ -48,8 +48,12 @@ const checkout = async () => {
             method: 'POST',
             body: { items: itemsForStripe, origin }
         })
-        const r = {...res.url}
+        const r = { ...res }
         console.log(r)
+        const first7Index = r.indexOf('7')
+        const from7Onwards = r.slice(first7Index)
+
+        console.log(from7Onwards)
 
         if (!res["url"]) {
             console.error('No URL returned from function', res["url"])

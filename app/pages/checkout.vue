@@ -39,7 +39,7 @@ const checkout = async () => {
             price: item.price,
             quantity: item.quantity
         }))
-        const res = await $fetch('/api/create-checkout-session', {
+        const res = await $fetch('/.netlify/functions/create-checkout-session', {
             method: 'POST',
             body: { items: itemsForStripe, origin },
         })

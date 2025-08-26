@@ -4,13 +4,12 @@ import Stripe from 'stripe'
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
   apiVersion: '2025-07-30.basil',
 })
-
+console.log(1)
 export const handler: Handler = async (event) => {
   try {
     const { items, origin } = JSON.parse(event.body || '{}')
 
     if (!items || items.length === 0) {
-      console.log(items)
       return {
         statusCode: 400,
         body: JSON.stringify({ error: 'No items in cart' }),

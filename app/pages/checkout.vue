@@ -48,9 +48,8 @@ const checkout = async () => {
             method: 'POST',
             body: { items: itemsForStripe, origin }
         })
-        console.log(res)
-        console.log(res.url)
-        console.log(res.body.url)
+        const r = {...res}
+        console.log(r)
 
         if (!res.url) {
             console.error('No URL returned from function', res.url)

@@ -2,10 +2,6 @@
   NODE_VERSION = "20"
 
 [build]
+  command = "nuxi build"
   publish = ".output/public"
   functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200

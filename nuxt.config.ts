@@ -24,4 +24,7 @@ export default defineNuxtConfig({
       stripePublicKey: process.env.STRIPE_PUBLIC_KEY,
     },
   },
+  nitro: {
+    preset: 'netlify-static'
+  }
 })

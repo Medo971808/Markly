@@ -9,9 +9,9 @@
             <p class="mb-6 text-gray-600">
                 You canceled the payment. You can return to the shop and try again.
             </p>
-            <NuxtLink to="/"
+            <NuxtLink to="/products"
                 class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition">
-                Back to Home
+                Back to Shop
             </NuxtLink>
         </div>
     </section>

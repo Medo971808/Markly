@@ -26,13 +26,17 @@ const checkout = async () => {
       emptyCart.value = true
       return
     }
-
-    const stripe = await loadStripe(import.meta.env.PUBLIC_STRIPE_KEY)
+    const config = useRuntimeConfig()
+    const stripeKey = config.public.stripePublicKey
+    if (!stripeKey) {
+      console.error('Stripe Public Key missing!')
+      return
+    }
+    const stripe = await loadStripe(stripeKey)
     if (!stripe) {
       alert('Stripe.js failed to load')
       return
     }
-
     const origin = window.location.origin
     const itemsForStripe = cart.value.map(item => ({
       name: item.title,
@@ -40,16 +44,17 @@ const checkout = async () => {
       quantity: item.quantity
     }))
 
-    console.log('Items for Stripe:', itemsForStripe)
-
     const res: any = await $fetch('/.netlify/functions/create-checkout-session', {
       method: 'POST',
       body: { items: itemsForStripe, origin }
     })
 
-    if (res.url) {
-      window.location.href = res.url
+    if (!res?.url) {
+      console.error('No URL returned from function', res)
+      return
     }
+    window.location.href = res.url
+
   } catch (err: any) {
     console.error('Checkout error:', err)
     alert('Something went wrong. Please try again.')

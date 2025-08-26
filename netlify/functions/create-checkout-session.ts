@@ -38,7 +38,7 @@ export const handler: Handler = async (event) => {
       body: JSON.stringify({ url: session.url })
     }
   } catch (error) {
-    console.error(error)
+    console.error('Server error:', error)
     return {
       statusCode: 500,
       body: JSON.stringify({ error: 'Server error' })

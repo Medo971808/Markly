@@ -73,12 +73,12 @@ const checkout = async () => {
             <h1 class="text-3xl font-bold mb-6">Checkout</h1>
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <input v-model="name" type="text" placeholder="Full Name" class="border p-3 bg-gray-700 rounded w-full focus:bg-[#1A1A1A]" />
-                <input v-model="email" type="email" placeholder="Email" class="border p-3 bg-gray-700 rounded w-full focus:bg-[#1A1A1A]" />
+                <input v-model="name" type="text" placeholder="Full Name" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="email" type="email" placeholder="Email" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
                 <input v-model="address" type="text" placeholder="Address"
-                    class="border p-3 rounded w-full bg-gray-700 focus:bg-[#1A1A1A] md:col-span-2" />
-                <input v-model="city" type="text" placeholder="City" class="border p-3 bg-gray-700 rounded w-full focus:bg-[#1A1A1A]" />
-                <input v-model="zip" type="text" placeholder="ZIP Code" class="border p-3 bg-gray-700 rounded w-full focus:bg-[#1A1A1A]" />
+                    class="border p-3 rounded w-full bg-[#1A1A1A] focus:bg-black md:col-span-2" />
+                <input v-model="city" type="text" placeholder="City" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="zip" type="text" placeholder="ZIP Code" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
             </section>
 
             <section class="mb-6">

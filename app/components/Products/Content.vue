@@ -44,7 +44,7 @@ const emit = defineEmits(["add-to-cart"])
                 isLaptop && (index + 1) % 3 === 0 ? 'lg:border-r-0' : isLaptop ? 'lg:border-r-[5px]' : '',
                 isTablet && (index + 1) % 2 === 0 ? 'md:border-r-0' : isTablet ? 'md:border-r-[5px]' : '',
                 'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col']">
-              <section class="w-full h-full flex items-center justify-center bg-[#1F1F1F] mb-5">
+              <section class="w-full h-full flex items-center justify-center mb-5">
                 <img :src="value.image" class=" h-3/4 w-auto" />
               </section>
               <section class="flex justify-between items-center w-full">

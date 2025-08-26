@@ -49,16 +49,9 @@ const checkout = async () => {
             body: { items: itemsForStripe, origin }
         })
         const r = { ...res }
-        console.log(r)
         const result = Object.values(r).slice(8).slice(0,-2).join('')
-        console.log(result)
 
-        if (!res["url"]) {
-            console.error('No URL returned from function', res["url"])
-            alert('Checkout failed. Please try again.')
-            return
-        }
-        window.location.href = res["url"]
+        window.location.href = result
 
     } catch (err: any) {
         console.error('Checkout error:', err)

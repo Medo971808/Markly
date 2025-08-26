@@ -48,14 +48,13 @@ const checkout = async () => {
             method: 'POST',
             body: { items: itemsForStripe, origin }
         })
-        const url = res?.url || res?.body?.url
 
-        if (!url) {
-            console.error('No URL returned from function', res)
+        if (!res.url) {
+            console.error('No URL returned from function', res.url)
             alert('Checkout failed. Please try again.')
             return
         }
-        window.location.href = url
+        window.location.href = res?.url
 
     } catch (err: any) {
         console.error('Checkout error:', err)

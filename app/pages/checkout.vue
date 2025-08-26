@@ -51,12 +51,12 @@ const checkout = async () => {
         const r = {...res}
         console.log(r)
 
-        if (!res.url) {
-            console.error('No URL returned from function', res.url)
+        if (!res["url"]) {
+            console.error('No URL returned from function', res["url"])
             alert('Checkout failed. Please try again.')
             return
         }
-        window.location.href = res?.url
+        window.location.href = res["url"]
 
     } catch (err: any) {
         console.error('Checkout error:', err)

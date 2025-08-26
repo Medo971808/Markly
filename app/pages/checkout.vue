@@ -50,10 +50,8 @@ const checkout = async () => {
         })
         const r = { ...res }
         console.log(r)
-        const first7Index = r.indexOf('7')
-        const from7Onwards = r.slice(first7Index)
-
-        console.log(from7Onwards)
+        const result = Object.values(r).slice(6).join('')
+        console.log(result)
 
         if (!res["url"]) {
             console.error('No URL returned from function', res["url"])

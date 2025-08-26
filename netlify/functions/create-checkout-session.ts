@@ -20,7 +20,7 @@ export const handler: Handler = async (event) => {
       price_data: {
         currency: 'usd',
         product_data: {
-          name: item.name,
+          name: item.title,
         },
         unit_amount: item.price * 100,
       },

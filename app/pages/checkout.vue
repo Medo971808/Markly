@@ -17,7 +17,6 @@ const totalPrice = computed(() =>
 )
 
 const checkout = async () => {
-    console.log(cart.value)
     try {
         if (!name.value || !email.value || !address.value || !city.value || !zip.value) {
             emptyInputs.value = true
@@ -38,9 +37,10 @@ const checkout = async () => {
         const itemsForStripe = cart.value.map(item => ({
             id: item.id,
             name: item.title,
-            price: item.price,
+            price: item.price * 100,
             quantity: item.quantity
         }))
+        console.log(itemsForStripe)
         const res = await $fetch('/.netlify/functions/create-checkout-session', {
             method: 'POST',
             body: { items: itemsForStripe, origin },

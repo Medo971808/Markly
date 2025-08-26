@@ -48,7 +48,7 @@ const checkout = async () => {
             method: 'POST',
             body: { items: itemsForStripe, origin }
         })
-        const r = {...res}
+        const r = {...res.url}
         console.log(r)
 
         if (!res["url"]) {

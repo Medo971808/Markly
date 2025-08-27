@@ -19,7 +19,7 @@ const removeItem = (id: number) => {
 </script>
 
 <template>
-  <section class="text-white px-6 pb-5 pt-20">
+  <section class="text-white px-6 pb-5 pt-20 md:pt-32">
     <section v-if="!user" class="w-full flex h-16 mt-5">
       <NuxtLink to="/auth/login" class="w-full flex items-center justify-center bg-[#DB4444] h-full rounded-xl hover:bg-[#383838] transition duration-300">Log in</NuxtLink>
     </section>

@@ -7,7 +7,12 @@ const linkClass = (path: string) => {
     'border-[3px] bg-black border-[#262626]' : ''
 }
 
-const { user, logout } = useLogin()
+const { user } = useLogin()
+
+const handlePhoto = () => {
+  if (user.value) navigateTo(`/user/${user.value.uid}`)
+  menuOpen.value = false
+}
 </script>
 
 <style>
@@ -28,7 +33,7 @@ const { user, logout } = useLogin()
     class="bg-[#2A2F38] md:bg-black fixed top-0 left-0 w-full z-50 lg:bg-black lg:border-b-[5px] lg:border-dashed lg:border-[#262626] px-6 py-3">
     <section class="flex justify-between items-center">
       <section class="text-white font-semibold text-2xl md:text-3xl">
-        <span style="font-family: 'Pacifico', cursive;">Markly</span>
+        <NuxtLink to="/" style="font-family: 'Pacifico', cursive;">Markly</NuxtLink>
       </section>
       <button @click="menuOpen = !menuOpen" class="md:hidden text-white focus:outline-none">
         <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
@@ -41,10 +46,6 @@ const { user, logout } = useLogin()
         </svg>
       </button>
       <section class="hidden md:flex items-center space-x-3">
-        <p v-if="user" 
-          class="text-white text-xl md:text-2xl font-semibold bg-gradient-to-r bg-clip-text text-transparent animate-pulse drop-shadow-lg">
-          Hello, {{ user.displayName?.split(' ')[0] }} 👋
-        </p>
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
           to="/">Home</NuxtLink>
@@ -61,11 +62,9 @@ const { user, logout } = useLogin()
           to="/contact">Contact</NuxtLink>
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
-          to="/cart">Cart</NuxtLink>
-        <button v-if="user" @click="logout"
-          class="bg-[#DB4444] text-white font-medium px-4 py-2 rounded-lg hover:bg-[#DB5555] transition duration-300">
-          Log Out
-        </button>
+          :to="user ? '/cart' : '/auth/login'">Cart</NuxtLink>
+        <img :src="user.photoURL || '/face.jpg'" alt="" v-if="user" class="rounded-full w-12 h-12 cursor-pointer"
+          @click="handlePhoto">
         <NuxtLink v-else to="/auth/login"
           class="bg-[#DB4444] text-white font-medium px-4 py-2 rounded-lg hover:bg-[#383838] transition duration-300">
           Log In
@@ -74,10 +73,11 @@ const { user, logout } = useLogin()
     </section>
     <transition name="slide">
       <section v-if="menuOpen" class="flex flex-col mt-4 space-y-2 md:hidden text-white">
-        <p v-if="user"
-          class="text-white text-xl md:text-2xl font-semibold bg-gradient-to-r bg-clip-text text-transparent animate-pulse drop-shadow-lg">
-          Hello, {{ user.displayName?.split(' ')[0] }} 👋
-        </p>
+        <img :src="user.photoURL || '/face.jpg'" alt="" v-if="user" class="rounded-full w-12 h-12 cursor-pointer"
+          @click="handlePhoto">
+        <NuxtLink @click="menuOpen = false" to="/auth/login"
+          class="cursor-pointer bg-[#DB4444] p-2 flex items-center transition duration-300 hover:bg-[#383838]"
+          :class="linkClass('/auth/login')" v-else>Log In</NuxtLink>
         <NuxtLink class="cursor-pointer px-3 py-1 rounded transition duration-300 hover:bg-[#383838]" to="/"
           :class="linkClass('/')" @click="menuOpen = false">Home</NuxtLink>
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/products"
@@ -86,13 +86,8 @@ const { user, logout } = useLogin()
         </NuxtLink>
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/contact"
           :class="linkClass('/contact')" @click="menuOpen = false">Contact</NuxtLink>
-        <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/cart"
+        <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" :to="user ? '/cart' : '/auth/login'"
           :class="linkClass('/cart')" @click="menuOpen = false">Cart</NuxtLink>
-        <button class="bg-[#DB4444] w-28 h-12 rounded-lg hover:bg-[#DB5555]" v-if="user" @click="logout">Log
-          Out</button>
-        <NuxtLink @click="menuOpen = false" to="/auth/login"
-          class="cursor-pointer bg-[#DB4444] p-2 flex items-center transition duration-300 hover:bg-[#383838]"
-          :class="linkClass('/auth/login')" v-else>Log In</NuxtLink>
       </section>
     </transition>
   </nav>

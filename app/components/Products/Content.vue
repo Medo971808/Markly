@@ -19,6 +19,8 @@ const handleTitle = (title: string) => {
 }
 
 const emit = defineEmits(["add-to-cart"])
+
+const { user } = useLogin()
 </script>
 
 <template>
@@ -51,7 +53,7 @@ const emit = defineEmits(["add-to-cart"])
                 <label
                   class="rounded-full bg-[#1A1A1A] text-[#B3B3B2] w-32 flex justify-center items-center h-10 border-[3px] border-dashed border-[#262626]">Womenswear</label>
                 <NuxtLink @click.prevent="emit('add-to-cart', value)"
-                to="/cart" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                :to="user ? '/cart' : '/auth/login'" class="hidden md:flex bg-[#1F1F1F] px-6 py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                   Add To Cart
@@ -64,7 +66,7 @@ const emit = defineEmits(["add-to-cart"])
                   <p class="text-[#81807E] text-lg">Price: <span class="text-white">$ {{ value.price }}</span></p>
                 </section>
                 <NuxtLink  @click.prevent="emit('add-to-cart', value)"
-                to="/cart" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
+                :to="user ? '/cart' : '/auth/login'" class="flex md:hidden w-full justify-center mt-4 bg-[#1F1F1F] py-3 rounded-xl border-[3px] border-dashed border-[#AE9B84] 
                 text-white font-medium transition-all duration-300 
                 hover:bg-[#AE9B84] hover:text-black hover:scale-105 hover:shadow-lg">
                   Add To Cart

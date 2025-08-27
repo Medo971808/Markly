@@ -32,7 +32,7 @@ const handleForgetPassword = async () => {
 
 <template>
     <section class="mt-5 md:mt-0">
-        <h1 class="text-3xl md:tracking-widest">Log in to Execlusive</h1>
+        <h1 class="text-3xl md:tracking-widest">Log in to Markly</h1>
         <p class="md:mt-2 mt-3 mb-5">Enter your details below</p>
         <input type="email" v-model="email"
             class="bg-black border-b border-white block w-full mb-5 py-5 pl-2 h-10 focus:outline-none"

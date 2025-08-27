@@ -25,6 +25,8 @@ const ratingStars = computed(() => {
   const rate = props.product?.rating?.rate
   return Math.round(rate ?? 0)
 })
+
+const { user } = useLogin()
 </script>
 
 <template>
@@ -40,7 +42,7 @@ const ratingStars = computed(() => {
         <span class="mt-2 text-[#676665] text-sm md:text-lg">{{ product.description }}</span>
         <span class="inline-block mt-2 bg-[#152011] text-[#8AF265] rounded-xl w-24 text-center">In stock</span>
         <section class="mt-5 md:hidden">
-          <NuxtLink @click.prevent="emit('add-to-cart', product)" to="/cart" class="mr-5 w-full mb-5 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+          <NuxtLink @click.prevent="emit('add-to-cart', product)" :to="user ? '/cart' : '/auth/login'" class="mr-5 w-full mb-5 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
             flex items-center justify-center text-white font-medium
             transition-all duration-300 ease-in-out
             hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">
@@ -61,7 +63,7 @@ const ratingStars = computed(() => {
         </section>
       </section>
       <section class="px-10 hidden md:flex">
-        <NuxtLink to="/cart" @click.prevent="emit('add-to-cart', product)" class="mr-5 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+        <NuxtLink :to="user ? '/cart' : '/auth/login'" @click.prevent="emit('add-to-cart', product)" class="mr-5 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
           flex items-center justify-center text-white font-medium
           transition-all duration-300 ease-in-out
           hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">
@@ -134,7 +136,7 @@ const ratingStars = computed(() => {
               <h1 class="text-2xl mr-5">${{ product.price }}</h1>
               <p class="text-[#81807E]">( MRP incl. of all taxes )</p>
             </section>
-            <NuxtLink @click.prevent="emit('add-to-cart', product)" to="/cart" class="mr-5 mt-5 md:mt-0 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
+            <NuxtLink @click.prevent="emit('add-to-cart', product)" :to="user ? '/cart' : '/auth/login'" class="mr-5 mt-5 md:mt-0 w-32 h-12 rounded-xl bg-[#1F1F1F] border-dashed border-[#262626] border-[3px]
               flex items-center justify-center text-white font-medium
               transition-all duration-300 ease-in-out
               hover:bg-[#2a2a2a] hover:scale-105 hover:shadow-lg hover:border-[#C2B4A3]">

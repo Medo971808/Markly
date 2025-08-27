@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { user } = useLogin()
+
 const cart = useState<any[]>("cart", () => [])
 
 const totalPrice = computed(() => {
@@ -17,10 +19,11 @@ const removeItem = (id: number) => {
 </script>
 
 <template>
-  <section class="px-6 py-10 max-w-6xl mx-auto">
-    <h1 class="text-3xl font-bold mb-6">Your Cart</h1>
-
-    <section v-if="cart.length > 0" class="space-y-6">
+  <section class="text-white px-6 pb-5 pt-20">
+    <section v-if="!user" class="w-full flex h-16 mt-5">
+      <NuxtLink to="/auth/login" class="w-full flex items-center justify-center bg-[#DB4444] h-full rounded-xl hover:bg-[#383838] transition duration-300">Log in</NuxtLink>
+    </section>
+    <section v-if="user && cart.length > 0" class="space-y-6">
       <section 
         v-for="item in cart" 
         :key="item.id" 
@@ -52,7 +55,7 @@ const removeItem = (id: number) => {
         </NuxtLink>
       </section>
     </section>
-    <section v-else class="text-center text-xl text-[#81807E]">
+    <section v-else-if="user && cart.length === 0" class="text-center text-xl text-[#81807E]">
       Your cart is empty.
     </section>
   </section>

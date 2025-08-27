@@ -1,13 +1,14 @@
 import { ref } from 'vue'
 import {
     signInWithEmailAndPassword, signOut, onAuthStateChanged,
-    GoogleAuthProvider, signInWithPopup, type User, sendPasswordResetEmail
+    GoogleAuthProvider, signInWithPopup, type User, sendPasswordResetEmail,
+    type Auth
 } from 'firebase/auth'
 import { useNuxtApp } from '#app'
 
 export const useLogin = () => {
     const nuxtApp = useNuxtApp()
-    const auth = nuxtApp.$firebaseAuth
+    const auth = nuxtApp.$firebaseAuth as Auth
 
     const user = ref<User | null>(null)
     const error = ref<string | null>(null)

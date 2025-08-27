@@ -2,24 +2,27 @@
 const { user, login, loginWithGoogle, error, loading, resetPassword } = useLogin()
 const email = ref('')
 const password = ref('')
+const forgetPassword = ref('')
 
 const handleLogin = async () => {
-    await login(email.value, password.value)
+    const loggedInUser = await login(email.value, password.value)
+    if (loggedInUser) navigateTo("/")
 }
 
 const handleGoogleLogin = async () => {
-    await loginWithGoogle()
+    const loggedInUserWithGoogle = await loginWithGoogle()
+    if(loggedInUserWithGoogle) navigateTo("/")
 }
 
 const handleForgetPassword = async () => {
     if (!email.value) {
-        alert('Please enter your email first')
+        forgetPassword.value = 'Please enter your email first'
         return
     }
 
     const success = await resetPassword(email.value)
     if (success) {
-        alert('Check your email to reset your password')
+        forgetPassword.value = 'Check your email to reset your password'
     }
 }
 </script>
@@ -61,9 +64,8 @@ const handleForgetPassword = async () => {
                             <FontAwesomeIcon :icon="['fab', 'google']" class="text-2xl transition-colors" />
                             Login with Google
                         </button>
-
                         <p v-if="error" class="text-red-500 mt-3">{{ error }}</p>
-                        <p v-else-if="user" class="text-green-500 mt-3">Logged in as: {{ user.email }}</p>
+                        <p v-else class="text-red-500 mt-3">{{ forgetPassword }}</p>
                     </section>
                 </section>
             </section>

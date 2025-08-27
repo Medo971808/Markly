@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 import { loadStripe } from '@stripe/stripe-js'
+
+const { user } = useLogin()
 
 const cart = useState<any[]>("cart", () => [])
 
@@ -49,7 +50,7 @@ const checkout = async () => {
             body: { items: itemsForStripe, origin }
         })
         const r = { ...res }
-        const result = Object.values(r).slice(8).slice(0,-2).join('')
+        const result = Object.values(r).slice(8).slice(0, -2).join('')
 
         window.location.href = result
 
@@ -62,7 +63,12 @@ const checkout = async () => {
 
 <template>
     <section class="text-white px-6 pb-5 pt-20">
-        <section class="max-w-4xl mx-auto p-6 rounded-xl shadow-lg mt-10">
+        <section v-if="!user" class="w-full flex h-16 mt-5">
+            <NuxtLink to="/auth/login"
+                class="w-full flex items-center justify-center bg-[#DB4444] h-full rounded-xl hover:bg-[#383838] transition duration-300">
+                Log in</NuxtLink>
+        </section>
+        <section class="max-w-4xl mx-auto p-6 rounded-xl shadow-lg mt-10" v-else>
             <section v-if="emptyCart" class="text-red-700 text-2xl mb-10">
                 Cart is empty
             </section>
@@ -73,12 +79,16 @@ const checkout = async () => {
             <h1 class="text-3xl font-bold mb-6">Checkout</h1>
 
             <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <input v-model="name" type="text" placeholder="Full Name" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
-                <input v-model="email" type="email" placeholder="Email" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="name" type="text" placeholder="Full Name"
+                    class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="email" type="email" placeholder="Email"
+                    class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
                 <input v-model="address" type="text" placeholder="Address"
                     class="border p-3 rounded w-full bg-[#1A1A1A] focus:bg-black md:col-span-2" />
-                <input v-model="city" type="text" placeholder="City" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
-                <input v-model="zip" type="text" placeholder="ZIP Code" class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="city" type="text" placeholder="City"
+                    class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
+                <input v-model="zip" type="text" placeholder="ZIP Code"
+                    class="border p-3 bg-[#1A1A1A] rounded w-full focus:bg-black" />
             </section>
 
             <section class="mb-6">

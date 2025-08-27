@@ -41,6 +41,10 @@ const { user, logout } = useLogin()
         </svg>
       </button>
       <section class="hidden md:flex items-center space-x-3">
+        <p v-if="user" 
+          class="text-white text-xl md:text-2xl font-semibold bg-gradient-to-r bg-clip-text text-transparent animate-pulse drop-shadow-lg">
+          Hello, {{ user.displayName?.split(' ')[0] }} 👋
+        </p>
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
           to="/">Home</NuxtLink>
@@ -70,6 +74,10 @@ const { user, logout } = useLogin()
     </section>
     <transition name="slide">
       <section v-if="menuOpen" class="flex flex-col mt-4 space-y-2 md:hidden text-white">
+        <p v-if="user"
+          class="text-white text-xl md:text-2xl font-semibold bg-gradient-to-r bg-clip-text text-transparent animate-pulse drop-shadow-lg">
+          Hello, {{ user.displayName?.split(' ')[0] }} 👋
+        </p>
         <NuxtLink class="cursor-pointer px-3 py-1 rounded transition duration-300 hover:bg-[#383838]" to="/"
           :class="linkClass('/')" @click="menuOpen = false">Home</NuxtLink>
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/products"

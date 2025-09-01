@@ -68,7 +68,6 @@ const { user } = useLogin()
                     :class="[
                         isLaptop && (index + 1) % 3 === 0 ? 'border-r-0' : isLaptop ? 'border-r-[5px]' : '',
                         isLaptop && (index === 0 || index === 1 || index === 2) ? 'mt-10 border-t-[5px] border-dashed border-[#262626]' : 'lg:border-t-0',
-                        isLaptop && (index === displayedProducts.length - 2) ? 'lg:border-b-0' : '',
                         isTablet && (index + 1) % 2 === 0 ? 'border-r-0' : isTablet ? 'border-r-[5px]' : '',
                         isTablet && (index === 0 || index === 1) ? 'mt-10' : '',
                         isMobile && (index === 0) ? 'mt-10' : '',

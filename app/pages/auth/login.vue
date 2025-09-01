@@ -51,7 +51,7 @@ const handleForgetPassword = async () => {
             </button>
         </section>
         <p class="text-center mb-2">or</p>
-        <button
+        <button :disabled="loading"
             class="flex items-center justify-center gap-2 px-4 py-2 bg-[#1A1A1A] border rounded-lg shadow w-full hover:bg-gray-800 transition"
             @click="handleGoogleLogin">
             <FontAwesomeIcon :icon="['fab', 'google']" class="text-2xl transition-colors" />

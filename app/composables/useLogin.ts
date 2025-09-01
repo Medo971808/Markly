@@ -31,6 +31,9 @@ export const useLogin = () => {
             return credential.user
         } catch (err: any) {
             error.value = err.message
+            if (error.value?.includes('Firebase: Error (auth/invalid-credential).')) {
+                error.value = 'Invalid email or password'
+            }
             loading.value = false
             return null
         }

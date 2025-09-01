@@ -2,6 +2,8 @@
 const route = useRoute()
 const menuOpen = ref(false)
 
+const cart = useState<any[]>("cart", () => [])
+
 const linkClass = (path: string) => {
   return route.path === path ?
     'border-[3px] bg-black border-[#262626]' : ''
@@ -62,7 +64,7 @@ const handlePhoto = () => {
           to="/contact">Contact</NuxtLink>
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
-          :to="user ? '/cart' : '/auth/login'">Cart</NuxtLink>
+          :to="user ? '/cart' : '/auth/login'">Cart ({{ cart.length }})</NuxtLink>
         <img :src="user.photoURL || '/face.jpg'" alt="" v-if="user" class="rounded-full w-12 h-12 cursor-pointer"
           @click="handlePhoto">
         <NuxtLink v-else to="/auth/login"
@@ -87,7 +89,7 @@ const handlePhoto = () => {
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/contact"
           :class="linkClass('/contact')" @click="menuOpen = false">Contact</NuxtLink>
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" :to="user ? '/cart' : '/auth/login'"
-          :class="linkClass('/cart')" @click="menuOpen = false">Cart</NuxtLink>
+          :class="linkClass('/cart')" @click="menuOpen = false">Cart ({{ cart.length }})</NuxtLink>
       </section>
     </transition>
   </nav>

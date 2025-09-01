@@ -49,7 +49,7 @@ const handleGoogleSignup = async () => {
                 Create Account
             </button>
         </section>
-        <button
+        <button :disabled="loading"
             class="flex items-center justify-center h-12 gap-2 px-4 py-2 bg-[#1A1A1A] border rounded-lg shadow w-full hover:bg-gray-800 transition"
             @click="handleGoogleSignup">
             <FontAwesomeIcon :icon="['fab', 'google']" class="text-2xl transition-colors" />

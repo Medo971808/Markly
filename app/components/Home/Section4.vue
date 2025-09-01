@@ -66,15 +66,16 @@ const { user } = useLogin()
             <section class="grid md:grid-cols-2 lg:grid-cols-3" v-else>
                 <NuxtLink v-for="(value, index) in displayedProducts" :key="value.id" :to="`/products/${value.id}`"
                     :class="[
-                        isLaptop && (index + 1) % 3 === 0 ? 'lg:border-r-0' : isLaptop ? 'lg:border-r-[5px]' : '',
-                        isLaptop && (index === 0 || index === 1 || index === 2) ? 'lg:mt-10' : '',
-                        isTablet && (index + 1) % 2 === 0 ? 'md:border-r-0' : isTablet ? 'md:border-r-[5px]' : '',
-                        isTablet && (index === 0 || index === 1) ? 'md:mt-10' : '',
+                        isLaptop && (index + 1) % 3 === 0 ? 'border-r-0' : isLaptop ? 'border-r-[5px]' : '',
+                        isLaptop && (index === 0 || index === 1 || index === 2) ? 'mt-10 border-t-[5px] border-dashed border-[#262626]' : 'lg:border-t-0',
+                        isLaptop && (index === displayedProducts.length - 2) ? 'lg:border-b-0' : '',
+                        isTablet && (index + 1) % 2 === 0 ? 'border-r-0' : isTablet ? 'border-r-[5px]' : '',
+                        isTablet && (index === 0 || index === 1) ? 'mt-10' : '',
                         isMobile && (index === 0) ? 'mt-10' : '',
-                        'p-4 border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
-                    ]">
+                        'p-4 lg:border-b-[5px] border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
+                    ]">{{ index }}{{ displayedProducts.length }}
                     <section class="w-full h-full flex items-center justify-center mb-5 p-10 md:p-3">
-                        <img :src="value.image" class="h-auto w-full object-contain" />
+                        <img :src="value.image" class="lg:h-3/4 w-auto object-contain" />
                     </section>
                     <section class="flex justify-between items-center w-full">
                         <label

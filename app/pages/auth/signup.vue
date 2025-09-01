@@ -17,7 +17,6 @@ const handleEmailSignup = async () => {
 
   const u = await signupWithEmail(email.value, password.value, name.value)
   if (u) {
-    console.log('Signed up:', u)
     navigateTo('/')
   }
 }
@@ -25,7 +24,6 @@ const handleEmailSignup = async () => {
 const handleGoogleSignup = async () => {
   const u = await signupWithGoogle()
   if (u) {
-    console.log('Signed up with Google:', u)
     navigateTo('/')
   }
 }

@@ -18,10 +18,6 @@ const checkout = async () => {
     
     const config = useRuntimeConfig()
     const stripeKey = config.public.stripePublicKey
-    if (!stripeKey) {
-      console.error('Stripe Public Key missing!')
-      return
-    }
     const stripe = await loadStripe(stripeKey)
     if (!stripe) {
       alert('Stripe.js failed to load')
@@ -44,8 +40,7 @@ const checkout = async () => {
     const result = Object.values(r).slice(8).slice(0, -2).join('')
     window.location.href = result
   } catch (err: any) {
-    console.error('Checkout error:', err)
-    alert('Something went wrong. Please try again.')
+    alert(`Something went wrong. Please try again, (${err})`)
   }
 }
 </script>

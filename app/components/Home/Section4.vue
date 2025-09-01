@@ -72,7 +72,7 @@ const { user } = useLogin()
                         isTablet && (index === 0 || index === 1) ? 'mt-10' : '',
                         isMobile && (index === 0) ? 'mt-10' : '',
                         'p-4 lg:border-b-[5px] border-t-[5px] border-dashed border-[#262626] flex items-center flex-col'
-                    ]">{{ index }}{{ displayedProducts.length }}
+                    ]">
                     <section class="w-full h-full flex items-center justify-center mb-5 p-10 md:p-3">
                         <img :src="value.image" class="lg:h-3/4 w-auto object-contain" />
                     </section>

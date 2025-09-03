@@ -1,6 +1,7 @@
 <script setup>
-import { ref } from "vue"
-
+useSeoMeta({
+    title: 'Dashboard',
+})
 definePageMeta({
     layout: "dashboard",
 })

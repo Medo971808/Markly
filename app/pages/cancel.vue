@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+    title: 'Cancel',
+})
+</script>
+
 <template>
     <section class="flex flex-col items-center justify-center min-h-screen text-white px-4">
         <div class="bg-white rounded-3xl shadow-xl p-10 max-w-lg text-center text-gray-800">

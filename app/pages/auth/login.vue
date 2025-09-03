@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useSeoMeta({
+    title: 'Log in',
+})
 definePageMeta({
     layout: 'auth'
 })

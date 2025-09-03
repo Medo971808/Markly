@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+    title: 'User',
+})
+
 import { updateProfile } from 'firebase/auth'
 
 const { user, logout } = useLogin()

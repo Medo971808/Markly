@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+    title: 'Product',
+})
+
 const route = useRoute()
 const id: string = route.params.id as string
 const { data: product, error, pending } = useProduct(id)

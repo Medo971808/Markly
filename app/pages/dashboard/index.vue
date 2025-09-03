@@ -2,6 +2,9 @@
 definePageMeta({
     layout: 'dashboard'
 })
+useSeoMeta({
+    title: 'Dashboard',
+})
 
 const { data: users } = await useFetch("/api/users")
 

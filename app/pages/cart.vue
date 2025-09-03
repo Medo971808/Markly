@@ -16,6 +16,10 @@ const decrease = (item: any) => {
 const removeItem = (id: number) => {
   cart.value = cart.value.filter(item => item.id !== id)
 }
+
+useSeoMeta({
+    title: 'Cart',
+})
 </script>
 
 <template>

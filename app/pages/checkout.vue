@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Checkout',
+})
+
 import { loadStripe } from '@stripe/stripe-js'
 
 const { user } = useLogin()
@@ -12,10 +16,10 @@ const totalIsZeroMessage = ref('')
 const checkout = async () => {
   try {
     if (totalPrice.value === 0) {
-        totalIsZeroMessage.value = 'There is no products to buy'
-        return
+      totalIsZeroMessage.value = 'There is no products to buy'
+      return
     }
-    
+
     const config = useRuntimeConfig()
     const stripeKey = config.public.stripePublicKey
     const stripe = await loadStripe(stripeKey)
@@ -48,14 +52,14 @@ const checkout = async () => {
 <template>
   <section class="text-white px-6 pb-10 pt-32">
     <section v-if="!user" class="w-full flex h-16 mt-5">
-      <NuxtLink 
-        to="/auth/login"
+      <NuxtLink to="/auth/login"
         class="w-full flex items-center justify-center bg-[#DB4444] h-full rounded-xl hover:bg-[#383838] transition duration-300">
         Log in
       </NuxtLink>
     </section>
     <section v-else class="max-w-4xl mx-auto p-8 rounded-2xl shadow-2xl bg-[#1A1A1A]/70 backdrop-blur-md">
-      <h1 class="text-4xl font-extrabold mb-8 text-center bg-gradient-to-r from-[#DB4444] to-blue-500 bg-clip-text text-transparent">
+      <h1
+        class="text-4xl font-extrabold mb-8 text-center bg-gradient-to-r from-[#DB4444] to-blue-500 bg-clip-text text-transparent">
         Checkout
       </h1>
       <section class="flex flex-col md:flex-row items-center gap-6 mb-10">
@@ -79,8 +83,7 @@ const checkout = async () => {
         </section>
         <p class="text-[#DB4444] mt-2 text-xl">{{ totalIsZeroMessage }}</p>
       </section>
-      <button 
-        @click="checkout" 
+      <button @click="checkout"
         class="w-full py-4 rounded-xl font-semibold text-lg shadow-md bg-gradient-to-r from-blue-600 to-blue-800 hover:scale-[1.02] transition-transform duration-200">
         Pay with Stripe
       </button>

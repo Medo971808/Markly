@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Products',
+})
+
 const { pending, error, filteredProducts } = useProducts()
 const categories = ["men's clothing", "women's clothing", "jewelery", "electronics"]
 
@@ -10,11 +14,6 @@ const { addToCart } = useCart()
 </script>
 
 <template>
-  <ProductsContent
-    :pending="pending"
-    :error="error"
-    :categories="categories"
-    :filtered-products="normalizedFilteredProducts"
-    @add-to-cart="addToCart"
-  />
+  <ProductsContent :pending="pending" :error="error" :categories="categories"
+    :filtered-products="normalizedFilteredProducts" @add-to-cart="addToCart" />
 </template>

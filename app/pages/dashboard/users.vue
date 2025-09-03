@@ -3,8 +3,6 @@ definePageMeta({
     layout: "dashboard",
 })
 
-import { ref, onMounted } from "vue"
-
 interface User {
     uid: string
     displayName: string | null
@@ -13,35 +11,12 @@ interface User {
     disabled: boolean
 }
 
-const users = ref<User[]>([])
-const loading = ref(true)
-const error = ref<string | null>(null)
-
-const fetchUsers = async () => {
-    loading.value = true
-    error.value = null
-    try {
-        const res = await $fetch<User[]>('/.netlify/functions/listUsers', { method: 'GET' })
-        users.value = res
-    } catch (err: any) {
-        error.value = err.message || 'Failed to load users'
-    } finally {
-        loading.value = false
-    }
-}
+const { data: users, error, pending, refresh } = await useFetch<User[]>("/api/users")
 
 const toggleUserDisabled = async (id: string) => {
-    try {
-        await $fetch(`/.netlify/functions/disabled?id=${id}`, { method: 'POST' })
-        await fetchUsers()
-    } catch (err: any) {
-        console.error(err)
-    }
+    await $fetch(`/api/users/${id}/disable`, { method: "POST" })
+    await refresh()
 }
-
-onMounted(() => {
-    fetchUsers()
-})
 </script>
 
 <template>
@@ -49,15 +24,12 @@ onMounted(() => {
         <section class="flex items-center justify-between">
             <h1 class="text-2xl font-bold">Users</h1>
         </section>
-
-        <section v-if="error" class="text-red-500">{{ error }}</section>
-
-        <section v-else-if="loading" class="flex flex-col justify-center items-center py-20">
+        <h1 v-if="error">{{ error }}</h1>
+        <section v-else-if="pending" class="flex flex-col justify-center items-center py-20">
             <section class="w-16 h-16 border-4 border-dashed rounded-full border-[#AE9B84] animate-spin"></section>
             <p class="mt-5 text-xl text-[#AE9B84] font-semibold">Loading users...</p>
         </section>
-
-        <section v-else class="hidden md:block rounded-2xl">
+        <section class="hidden md:block rounded-2xl" v-else="users">
             <table class="w-full border-collapse">
                 <thead class="text-left">
                     <tr>

@@ -21,7 +21,7 @@ const fetchUsers = async () => {
     loading.value = true
     error.value = null
     try {
-        const res = await $fetch<User[]>('/.netlify/functions/listUsers')
+        const res = await $fetch<User[]>('/.netlify/functions/listUsers', { method: 'GET' })
         users.value = res
     } catch (err: any) {
         error.value = err.message || 'Failed to load users'
@@ -32,7 +32,7 @@ const fetchUsers = async () => {
 
 const toggleUserDisabled = async (id: string) => {
     try {
-        await $fetch(`/.netlify/functions/disable?id=${id}`, { method: 'POST' })
+        await $fetch(`/.netlify/functions/disabled?id=${id}`, { method: 'POST' })
         await fetchUsers()
     } catch (err: any) {
         console.error(err)

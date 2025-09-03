@@ -21,6 +21,7 @@ const handleTitle = (title: string) => {
 const emit = defineEmits(["add-to-cart"])
 
 const { user } = useLogin()
+
 </script>
 
 <template>

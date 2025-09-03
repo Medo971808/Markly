@@ -28,7 +28,9 @@ export default defineNuxtConfig({
       firebaseProjectID: process.env.FIREBASE_PROJECT_ID,
       firebaseStorageBucket: process.env.FIREBASE_STORAGE_BUCKET,
       firebaseMessagingSenderID: process.env.FIREBASE_MESSAGING_SENDER_ID,
-      firebaseAppID: process.env.FIREBASE_APP_ID
+      firebaseAppID: process.env.FIREBASE_APP_ID,
+      firebaseClientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      firebasePrivateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
     },
   },
   nitro: {

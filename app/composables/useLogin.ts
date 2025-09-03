@@ -34,6 +34,9 @@ export const useLogin = () => {
             if (error.value?.includes('Firebase: Error (auth/invalid-credential).')) {
                 error.value = 'Invalid email or password'
             }
+            else if (error.value?.includes('Firebase: Error (auth/user-disabled).')) {
+                error.value = 'You are blocked from website manager'
+            }
             loading.value = false
             return null
         }

@@ -4,8 +4,10 @@
         <main>
             <slot />
         </main>
-        <FooterComments />
-        <FooterFAQ />
-        <FooterEnd />
+        <footer>
+            <FooterComments />
+            <FooterFAQ />
+            <FooterEnd />
+        </footer>
     </ClientOnly>
 </template>

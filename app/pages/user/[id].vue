@@ -4,12 +4,15 @@ import { updateProfile } from 'firebase/auth'
 const { user, logout } = useLogin()
 const editName = ref(false)
 const newName = ref('')
+const newPhoto = ref('')
 
-const updateName = async () => {
+const updateNameAndPhoto = async () => {
     if (!user.value) return
 
     const safeName = newName.value.trim() !== "" ? newName.value.trim() : null
+    const safePhoto = newPhoto.value.trim() !== "" ? newPhoto.value.trim() : null
     await updateProfile(user.value, { displayName: safeName })
+    await updateProfile(user.value, { photoURL: safePhoto })
 
     editName.value = false
 }
@@ -59,7 +62,10 @@ const handleLogout = async () => {
                         <input type="text" v-model="newName"
                             class="flex-1 h-10 bg-gray-900 text-white px-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
                             placeholder="Enter new name" />
-                        <button @click="updateName"
+                        <input type="text" v-model="newPhoto"
+                            class="flex-1 h-10 bg-gray-900 text-white px-4 rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+                            placeholder="Enter new photo url" />
+                        <button @click="updateNameAndPhoto"
                             class="px-5 h-10 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium shadow-md transition">
                             Done
                         </button>

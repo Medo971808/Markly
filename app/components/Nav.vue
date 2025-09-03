@@ -64,7 +64,12 @@ const handlePhoto = () => {
           to="/contact">Contact</NuxtLink>
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
-          :to="user ? '/cart' : '/auth/login'">Cart ({{ cart.length }})</NuxtLink>
+          :to="user ? '/cart' : '/auth/login'">Cart ({{ cart.length }})
+        </NuxtLink>
+        <NuxtLink
+          class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
+          :to="user ? '/dashboard' : '/auth/login'">Dashboard
+        </NuxtLink>
         <img :src="user.photoURL || '/face.jpg'" alt="" v-if="user" class="rounded-full w-12 h-12 cursor-pointer"
           @click="handlePhoto">
         <NuxtLink v-else to="/auth/login"
@@ -88,9 +93,14 @@ const handlePhoto = () => {
         </NuxtLink>
         <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" to="/contact"
           :class="linkClass('/contact')" @click="menuOpen = false">Contact</NuxtLink>
-        <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]" :to="user ? '/cart' : '/auth/login'"
-          :class="linkClass('/cart')" @click="menuOpen = false">Cart ({{ cart.length }})</NuxtLink>
+        <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]"
+          :to="user ? '/cart' : '/auth/login'" :class="linkClass('/cart')" @click="menuOpen = false">Cart ({{ cart.length }})
+        </NuxtLink>
+        <NuxtLink class="cursor-pointer p-2 flex items-center transition duration-300 hover:bg-[#383838]"
+          :to="user ? '/dashboard' : '/auth/login'" :class="linkClass('/cart')" @click="menuOpen = false">Dashboard
+        </NuxtLink>
       </section>
     </transition>
   </nav>
+  <section v-if="menuOpen" class="fixed inset-0 bg-black/40 z-30 md:hidden" @click="menuOpen = false"></section>
 </template>

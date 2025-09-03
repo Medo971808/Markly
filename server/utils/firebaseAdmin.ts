@@ -11,11 +11,6 @@ if (!admin.apps.length) {
                 privateKey: config.public.firebasePrivateKey
             }),
         });
-    } else {
-        const serviceAccount = import("../../marklyAccountKey.json");
-        admin.initializeApp({
-            credential: admin.credential.cert(serviceAccount as admin.ServiceAccount),
-        });
     }
 }
 

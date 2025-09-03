@@ -7,11 +7,6 @@
                     <slot />
                 </section>
             </main>
-            <footer>
-                <FooterComments />
-                <FooterFAQ />
-                <FooterEnd />
-            </footer>
         </section>
     </ClientOnly>
 </template>

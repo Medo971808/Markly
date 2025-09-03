@@ -20,6 +20,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+    firebaseClientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+    firebasePrivateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
     public: {
       stripePublicKey: process.env.STRIPE_PUBLIC_KEY,
 
@@ -29,8 +31,6 @@ export default defineNuxtConfig({
       firebaseStorageBucket: process.env.FIREBASE_STORAGE_BUCKET,
       firebaseMessagingSenderID: process.env.FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppID: process.env.FIREBASE_APP_ID,
-      firebaseClientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      firebasePrivateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
     },
   },
   nitro: {

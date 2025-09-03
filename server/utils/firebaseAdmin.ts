@@ -7,8 +7,8 @@ if (!admin.apps.length) {
         admin.initializeApp({
             credential: admin.credential.cert({
                 projectId: config.public.firebaseProjectID,
-                clientEmail: config.public.firebaseClientEmail,
-                privateKey: config.public.firebasePrivateKey
+                clientEmail: config.firebaseClientEmail,
+                privateKey: config.firebasePrivateKey
             }),
         });
     }

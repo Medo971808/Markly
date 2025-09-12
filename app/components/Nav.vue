@@ -37,7 +37,7 @@ const handlePhoto = () => {
       <section class="text-white font-semibold text-2xl md:text-3xl">
         <NuxtLink to="/" style="font-family: 'Pacifico', cursive;">Markly</NuxtLink>
       </section>
-      <button @click="menuOpen = !menuOpen" class="md:hidden text-white focus:outline-none">
+      <button @click="menuOpen = !menuOpen" class="md:hidden text-white focus:outline-none" aria-label="open menu">
         <svg v-if="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
           stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />

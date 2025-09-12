@@ -10,7 +10,7 @@
                     <button
                         class="w-16 h-10 border-[3px] border-dashed border-[#262626] rounded-lg mt-3 md:mt-0">Kids</button>
                     <h1 class="text-xl md:text-3xl my-5 text-white">ElEVATE YOUR STYLE WITH MARKLY</h1>
-                    <p class="text-[#676665]">Explore a world of fashion at Markly, where trends meet affordability.
+                    <p class="text-[#4A4A4A]">Explore a world of fashion at Markly, where trends meet affordability.
                         Immerse yourself in the latest styles and seize exclusive promotions.</p>
                 </section>
                 <section class="text-center border-x-[5px] border-b-[5px] rounded-br-3xl rounded-bl-3xl lg:rounded-bl-none border-[#262626] border-dashed lg:w-[50%] grid grid-cols-2">

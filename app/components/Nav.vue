@@ -70,7 +70,7 @@ const handlePhoto = () => {
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
           :to="user ? '/dashboard' : '/auth/login'">Dashboard
         </NuxtLink>
-        <img :src="user.photoURL || '/face.jpg'" alt="" v-if="user" class="rounded-full w-12 h-12 cursor-pointer"
+        <img :src="user.photoURL || '/face.jpg'" :alt="user.displayName || ''" v-if="user" loading="eager" class="rounded-full w-12 h-12 cursor-pointer"
           @click="handlePhoto">
         <NuxtLink v-else to="/auth/login"
           class="bg-[#DB4444] text-white font-medium px-4 py-2 rounded-lg hover:bg-[#383838] transition duration-300">

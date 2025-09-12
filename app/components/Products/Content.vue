@@ -50,7 +50,7 @@ const { user } = useLogin()
                 isTablet && (index === 0 || index === 1) ? 'mt-10' : '',
                 'p-4 lg:border-b-[5px] border-t-[5px] border-dashed border-[#262626] flex items-center flex-col']">
               <section class="w-full h-full flex items-center justify-center mb-5">
-                <img :src="value.image" class=" h-3/4 w-auto" />
+                <img :src="value.image" class=" h-3/4 w-auto" :alt="value.title" loading="lazy" />
               </section>
               <section class="flex justify-between items-center w-full">
                 <label

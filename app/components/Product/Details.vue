@@ -57,7 +57,7 @@ const { user } = useLogin()
             transition-all duration-300 ease-in-out
             hover:bg-gradient-to-r hover:from-[#C2B4A3] hover:to-[#E5D5C5]
             hover:scale-105 hover:shadow-lg hover:shadow-[#C2B4A3]/40">
-            <NuxtImg src="images/icons/bag.png" class="w-5 mr-1" />
+            <NuxtImg src="images/icons/bag.png" alt="Shop Now" loading="lazy" class="w-5 mr-1" />
             Shop Now
           </NuxtLink>
         </section>
@@ -78,7 +78,7 @@ const { user } = useLogin()
           transition-all duration-300 ease-in-out
           hover:bg-gradient-to-r hover:from-[#C2B4A3] hover:to-[#E5D5C5]
           hover:scale-105 hover:shadow-lg hover:shadow-[#C2B4A3]/40">
-          <NuxtImg src="images/icons/bag.png" class="w-5 mr-1" />
+          <NuxtImg src="images/icons/bag.png" alt="Shop Now" loading="lazy" class="w-5 mr-1" />
           Shop Now
         </NuxtLink>
       </section>
@@ -86,11 +86,11 @@ const { user } = useLogin()
     <section class="mt-10 border-dashed border-[#262626] border-t-[5px] border-b-[5px] grid md:grid-cols-2">
       <section
         class="md:flex items-center md:border-r-[5px] border-dashed border-[#262626] md:p-10 p-5 border-b-[5px] md:border-b-0 ">
-        <img :src="product.image" class="w-full object-contain h-auto rounded-xl">
+        <img :alt="product.title" loading="lazy" :src="product.image" class="w-full object-contain h-auto rounded-xl">
       </section>
       <section class="flex items-center flex-col justify-center p-10 space-y-5">
-        <img :src="product.image" class="h-[48%] object-contain w-auto rounded-xl">
-        <img :src="product.image" class="h-[48%] object-contain w-auto rounded-xl">
+        <img :alt="product.title" loading="lazy" :src="product.image" class="h-[48%] object-contain w-auto rounded-xl">
+        <img :alt="product.title" loading="lazy" :src="product.image" class="h-[48%] object-contain w-auto rounded-xl">
       </section>
     </section>
     <section class="border-b-[5px] border-dashed border-[#262626]">
@@ -125,7 +125,7 @@ const { user } = useLogin()
           <p class="text-[#81807E] mt-3">
             Flowing from Grecian folds to glittering silks, the evening gown has graced centuries in luxury.
           </p>
-          <NuxtImg src="/images/productDetails/material.png" class="md:w-[520px] md:h-[311px] w-[90%] mt-10" />
+          <NuxtImg src="/images/productDetails/material.png" alt="material for product" loading="lazy" class="md:w-[520px] md:h-[311px] w-[90%] mt-10" />
         </section>
       </section>
       <section class="box-border">

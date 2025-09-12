@@ -25,7 +25,7 @@ const clothesCategories: string[] = ['T-Shirt', 'Long-Sleeve T-Shirt', 'Raglan S
         <section class="mb-20 h-full hidden lg:block">
             <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] py-5 flex justify-center">
                 <section v-for="value in clothesCategories" class="flex items-center">
-                    <nuxt-img src="/images/icons/image.png" class="w-12" />
+                    <nuxt-img src="/images/icons/image.png" alt="Clothes Categoy" class="w-12" />
                     <p class="mx-5 text-[#333333] uppercase text-xl">{{ value }}</p>
                 </section>
             </section>
@@ -69,10 +69,10 @@ const clothesCategories: string[] = ['T-Shirt', 'Long-Sleeve T-Shirt', 'Raglan S
             </section>
 
         </section>
-        <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] px-6 py-12 grid md:grid-cols-3">
-            <section>
+        <section class="border-t-[5px] border-b-[5px] border-dashed border-[#262626] px-6 py-12 grid lg:grid-cols-3">
+            <section class="mb-5">
                 <p>Home</p>
-                <section class="flex gap-6 text-[#81C784] mt-5">
+                <section class="flex gap-6 text-[#81C784] mt-2">
                     <ul class="flex space-x-4">
                         <li class="flex items-center hover:text-[#AE9B84] cursor-pointer">
                             <NuxtLink to="/about-us" class="text-white hover:text-[#AE9B84] focus:text-[#F5DEB3] transition-colors">Why Us</NuxtLink>
@@ -89,9 +89,9 @@ const clothesCategories: string[] = ['T-Shirt', 'Long-Sleeve T-Shirt', 'Raglan S
                     </ul>
                 </section>
             </section>
-            <section class="mt-10 md:mt-0">
+            <section class="mt-10 lg:mt-0">
                 <p>Products</p>
-                <section class="flex gap-6 text-[#81C784] mt-5">
+                <section class="flex gap-6 text-[#81C784] mt-2">
                     <ul class="flex space-x-4">
                         <li class="flex items-center hover:text-[#AE9B84] cursor-pointer">Menswear</li>
                         <li
@@ -103,9 +103,9 @@ const clothesCategories: string[] = ['T-Shirt', 'Long-Sleeve T-Shirt', 'Raglan S
                     </ul>
                 </section>
             </section>
-            <section class="mt-10 md:mt-0">
+            <section class="mt-10 lg:mt-0">
                 <p>Subscribe to Newsletter</p>
-                <section class="flex items-center mt-5 bg-[#1A1A1A] w-[80%] h-10 rounded-lg">
+                <section class="flex items-center mt-2 bg-[#1A1A1A] w-[80%] h-10 rounded-lg">
                     <input type="email" placeholder="Your Email"
                         class="h-full w-[90%] bg-[#1A1A1A] px-6 outline-none rounded-l-lg" />
                     <button class="bg-[#1A1A1A] hover:bg-[#81C784] h-full w-10 rounded-r-lg"
@@ -116,7 +116,7 @@ const clothesCategories: string[] = ['T-Shirt', 'Long-Sleeve T-Shirt', 'Raglan S
             </section>
         </section>
         <section class="px-6 py-12 md:flex justify-between tracking-widest text-[#81807E]">
-            <p class="mb-5 md:mb-0">&copy; 2025 Markly. All rights reserved.</p>
+            <p class="mb-5 lg:mb-0">&copy; 2025 Markly. All rights reserved.</p>
             <span>Terms & Conditions <span class="text-[#262626]">|</span> Privacy Policy</span>
         </section>
     </section>

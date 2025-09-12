@@ -51,7 +51,7 @@ const handlePhoto = () => {
         <NuxtLink
           class="cursor-pointer bg-zinc-900 text-white px-3 py-1 rounded transition duration-300 hover:bg-[#383838]"
           to="/">Home</NuxtLink>
-        <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded transition duration-300 hover:bg-[#383838]"
+        <NuxtLink class="cursor-pointer bg-zinc-900 p-2 rounded transition duration-300 hover:bg-[#383838]" aria-label="Shop for Products"
           to="/products">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white"
             class="w-5 h-5 transition-transform duration-300 hover:scale-110">

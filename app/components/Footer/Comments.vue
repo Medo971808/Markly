@@ -45,7 +45,7 @@ const testimonials = [
             <h1 class="text-xl md:text-3xl m-10 uppercase">
                 Markly Testimonial Collection.
             </h1>
-            <p class="mt-5 text-[#4A4A4A] ml-10">
+            <p class="mt-5 text-[#81C784] ml-10">
                 At Markly, our customers are the heartbeat of our brand.
             </p>
 
@@ -61,7 +61,7 @@ const testimonials = [
                             <nuxt-img :src="t.image" :alt="`Photo of ${t.name} from ${t.location}`" class="w-16 h-16" />
                             <section class="mt-3 md:mt-1 ml-3">
                                 <p class="md:text-lg text-sm">{{ t.name }}</p>
-                                <p class="text-[#4A4A4A] md:text-lg text-sm">
+                                <p class="text-[#81807E] md:text-lg text-sm">
                                     {{ t.location }}
                                 </p>
                             </section>
@@ -76,7 +76,7 @@ const testimonials = [
                             class="text-[#FFCE22] mr-1 text-sm md:text-lg" />
                     </section>
 
-                    <p class="text-[#4A4A4A] text-sm md:text-lg">
+                    <p class="text-[#81807E] text-sm md:text-lg">
                         {{ t.text }}
                     </p>
                 </section>

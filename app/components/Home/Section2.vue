@@ -2,7 +2,7 @@
     <section class="text-white px-6 pb-5 pt-20">
         <section class="border-[5px] border-dashed border-[#262626] rounded-3xl">
             <h1 class="text-xl md:text-3xl m-10">CRAFTING TRENDS, INSPIRING CONFIDENCE</h1>
-            <h2 class="mt-5 text-[#4A4A4A] ml-10 md:ml-10">Explore a world of fashion at Markly, where trends meet affordability.</h2>
+            <h2 class="mt-5 text-[#81C784] ml-10 md:ml-10">Explore a world of fashion at Markly, where trends meet affordability.</h2>
             <section class="grid lg:grid-cols-3 md:grid-cols-2">
                 <section class="p-10 border-t-[5px] md:border-r-[5px] border-dashed border-[#262626] mt-20 flex flex-col justify-center">
                     <section class="rounded-full w-20 h-20 border-[5px] border-dashed border-[#262626] flex justify-center items-center">

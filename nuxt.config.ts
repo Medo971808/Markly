@@ -12,6 +12,13 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap'
         }
+      ],
+      script: [
+        {
+          async: true,
+          src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6477547953326490",
+          crossorigin: "anonymous"
+        }
       ]
     }
   },

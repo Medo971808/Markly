@@ -10,8 +10,13 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap'
-        }
+          href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap',
+          
+        },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
       ],
       script: [
         {
@@ -23,6 +28,7 @@ export default defineNuxtConfig({
     }
   },
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     '@/assets/main.css'
   ],
   runtimeConfig: {

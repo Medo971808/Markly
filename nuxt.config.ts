@@ -24,6 +24,9 @@ export default defineNuxtConfig({
           src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6477547953326490",
           crossorigin: "anonymous"
         }
+      ],
+      meta: [
+        { name: 'description', content: 'Markly is a platform that helps you manage your projects efficiently with modern tools and simple UI.' }
       ]
     }
   },

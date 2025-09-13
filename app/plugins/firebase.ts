@@ -1,21 +1,31 @@
 import { defineNuxtPlugin } from '#app'
-import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth'
 
 export default defineNuxtPlugin((nuxtApp) => {
-    const config = useRuntimeConfig()
+  let auth: any = null
 
+  const initFirebase = async () => {
+    const { initializeApp } = await import('firebase/app')
+    const { getAuth } = await import('firebase/auth')
+
+    const config = useRuntimeConfig()
     const firebaseConfig = {
-        apiKey: config.public.firebaseApikey,
-        authDomain: config.public.firebaseAuthDomain,
-        projectId: config.public.firebaseProjectID,
-        storageBucket: config.public.firebaseStorageBucket,
-        messagingSenderId: config.public.firebaseMessagingSenderID,
-        appId: config.public.firebaseAppID
+      apiKey: config.public.firebaseApikey,
+      authDomain: config.public.firebaseAuthDomain,
+      projectId: config.public.firebaseProjectID,
+      storageBucket: config.public.firebaseStorageBucket,
+      messagingSenderId: config.public.firebaseMessagingSenderID,
+      appId: config.public.firebaseAppID
     };
 
     const app = initializeApp(firebaseConfig)
-    const auth = getAuth(app)
+    auth = getAuth(app)
+    return auth
+  }
 
-    nuxtApp.provide('firebaseAuth', auth)
+  nuxtApp.provide('firebaseAuth', async () => {
+    if (!auth) {
+      auth = await initFirebase()
+    }
+    return auth
+  })
 })
